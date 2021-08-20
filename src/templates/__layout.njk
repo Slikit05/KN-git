@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{pageTitle}}</title>
+    {% block Link %}
+    {% endblock %}
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    {% import "__mixin.njk" as mixin %}
+    <header>
+        {% include "include/header.njk" %}
+        {% include "include/mob-menu.njk" %}
+        {% include "include/modal-city.njk" %}
+        {% block Header %}
+
+        {% endblock %}
+    </header>
+    <div class="swipe-category">
+        <div class="swipe-category__wrapper">
+            <a href="#" class="swipe-category__block"><span>Власть</span><sup>+2</sup></a>
+            <a href="#" class="swipe-category__block"><span>Экономика</span><sup>+16</sup></a>
+            <a href="#" class="swipe-category__block"><span>Спорт</span><sup>+16</sup></a>
+            <a href="#" class="swipe-category__block"><span>Происшествия</span><sup>+8</sup></a>
+            <a href="#" class="swipe-category__block"><span>Власть</span><sup>+2</sup></a>
+        </div>
+    </div>
+   
+    <div class="grid-page">
+        <div class="grid-page__left">
+            {% include "include/sidebar.njk" %}
+        </div>
+        <div class="grid-page__right">
+            {% block Content %}
+            
+            {% endblock %}
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    {% block Scripts %}
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,105 @@
+{% macro xlgPreviewBlock(src, caption, dateText, timeText, class) %}
+<div class="xlg-previe-block {{ class }}">
+	<a class="xlg-previe-block__wrap-img" href="#">
+		<picture>
+			<source srcset="img/{{ src }}.jpg" type="image/jpg" />
+			<img alt="img/{{ src }}.webp"/>
+		</picture>
+	</a>
+	<div class="xlg-previe-block__wrap-text">
+		<div class="xlg-previe-block__area">
+			<a href="#">
+				<h3>{{ caption }}</h3>
+			</a>
+		</div>
+		<div class="xlg-previe-block__row">
+			<span class="sm-text-info date">{{ dateText }}</span>
+			<span class="sm-text-info time">{{ timeText }}</span>
+		</div>
+	</div>
+</div>
+{% endmacro %}
+
+
+{% macro lgPreviewBlock(src, caption, category, dateText, timeText, class) %}
+<div class="lg-previe-block {{ class }}">
+	<div class="lg-previe-block__wrap-img">
+		{% if category === '' %}
+		{% else %}
+			<a href="#" class="md-category">{{ category }}</a>
+		{% endif %}
+		<a href="#">
+			<picture>
+				<source srcset="img/{{ src }}.jpg" type="image/jpg" />
+				<img alt="img/{{ src }}.webp" />
+			</picture>
+		</a>		
+	</div>
+	<div class="lg-previe-block__wrap-text">
+		<div class="lg-previe-block__row">
+			<span class="sm-text-info date">{{ dateText }}</span>
+			<span class="sm-text-info time">{{ timeText }}</span>
+		</div>
+		<div class="lg-previe-block__area">
+			<a href="#">
+				<h3>{{ caption }}</h3>
+    	</a>
+		</div>
+	</div>
+</div>
+{% endmacro %}
+
+{% macro mdPreviewBlock(src, caption, category, dateText, timeText, class) %}
+<div class="md-previe-block {{ class }}">
+	<a class="md-previe-block__wrap-img" href="#">
+		<picture>
+			<source srcset="img/{{ src }}.jpg" type="image/jpg" />
+			<img alt="img/{{ src }}.webp" />
+		</picture>
+	</a>
+	<div class="md-previe-block__wrap-text">
+		<div class="md-previe-block__row">
+			{% if category === '' %}
+			{% else %}
+				<a href="#" class="sm-category">{{ category }}</a>
+			{% endif %}
+			<span class="sm-text-info date">{{ dateText }}</span>
+			<span class="sm-text-info time">{{ timeText }}</span>
+		</div>
+		<div class="md-previe-block__area">
+			<a href="#">
+				<h3>{{ caption }}</h3>
+    	</a>
+		</div>
+	</div>
+</div>
+{% endmacro %}
+
+{% macro smPreviewBlock(caption, category, dateText, timeText, class) %}
+<div class="sm-previe-block {{ class }}">
+	<div class="sm-previe-block__wrap-text">
+		<div class="sm-previe-block__row">
+			{% if category === '' %}
+			{% else %}
+				<a href="#" class="sm-category">{{ category }}</a>
+			{% endif %}
+			<span class="sm-text-info date">{{ dateText }}</span>
+			<span class="sm-text-info time">{{ timeText }}</span>
+		</div>
+		<div class="sm-previe-block__area">
+			<a href="#">
+				<h3>{{ caption }}</h3>
+    	</a>
+		</div>
+	</div>
+</div>
+{% endmacro %}
+
+
+{% macro postSidebar(text) %}
+<a class="sidebar__block" href="#">
+    <h4 class="sidebar__caption">{{ text }}</h4>
+    <div class="sidebar__row"><span class="sm-text-info date">02.02.2021</span><span class="sm-text-info time">09:41</span></div>
+</a>
+{% endmacro %}
+

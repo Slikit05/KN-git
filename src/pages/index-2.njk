@@ -1,0 +1,252 @@
+{% extends "__layout.njk" %}
+
+{% block Link %}
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+{% endblock %}
+
+{% block Header %}
+{% endblock %}
+
+{% block Content %}
+	<div class="content-grid">
+		<div class="content-grid__left">
+			<main>
+				<div class="container">
+					<div class="content-grid__wrapper">
+						{{ mixin.xlgPreviewBlock('xlg-news-img1', 'До +17: в Краснодарский край придет аномальное тепло', '22.01.2021', '13:18') }}
+						{{ mixin.mdPreviewBlock('md-news-img1', 'Водитель опрокинувшегося зерновоза был пьян', 'Спорт', '27.11.2020', '09:41') }}
+						<div class="wrap-imgb wrap-imgb--md"><img src="img/imgb2.jpg" alt=""></div>
+						<div class="wrapper-block-title">
+							<h4>Лента новостей</h4>
+						</div>
+						<div class="wrapper-sm-preview">
+							<div class="wrapper-sm-preview__block">
+								{{ mixin.smPreviewBlock('В Крымске полицейские задержали подозреваемого в грабеже мужчину', 'Спорт', '27.11.2020', '09:41', 'change-block') }}
+								{{ mixin.smPreviewBlock('На Кубани снег будет идти еще несколько дней', 'Спорт', '27.11.2020', '09:41', 'change-block') }}
+								{{ mixin.smPreviewBlock('Кубанские спасатели помогают жителям региона вызволять свои автомобили из снежного плена', 'Спорт', '27.11.2020', '09:41', 'change-block') }}
+							</div>
+						</div>
+						{{ mixin.lgPreviewBlock('lg-news-img1', 'Кубанские спасатели помогают жителям региона вызволять свои автомобили из снежного плена', 'Общество', '27.11.2020', '09:41', 'change-block') }}
+						{{ mixin.lgPreviewBlock('lg-news-img2', 'Ученые рассказали, когда может закончится для россиян масочный режим', 'Здоровье', '27.11.2020', '09:41', 'change-block') }}
+					</div>
+					<div class="content-grid__sm-grid">
+						<div class="content-grid__block">
+							<a href="" class="btn-link">
+								<span>Главное в Приморско-Ахтарске</span>
+								<svg>
+									<use xlink:href="img/sprite.svg#svg--sm-arrow"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="content-grid__block">
+							<a href="" class="btn-link">
+								<span>Все новости</span>
+								<svg>
+									<use xlink:href="img/sprite.svg#svg--sm-arrow"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+				{% include "../templates/include/topic.njk" %}
+				<div class="wrap-showblockad">
+					<img src="img/blockshadmob1.jpg" alt="">
+				</div>
+
+				<div class="container mob-black">
+					<div class="row-title">
+						<h3 class="title">Происшествия</h3>
+					</div>
+					<div class="content-grid__wrapper content-grid__wrapper--change">
+						{{ mixin.xlgPreviewBlock('xlg-news-img1', 'Школьный автобус попал в ДТП на скользком участке дороги', '22.01.2021', '13:18') }}
+						{{ mixin.lgPreviewBlock('lg-news-img1', 'Неизвестные обстреляли автобусы с пассажирами', '', '27.11.2020', '09:41', 'change-block') }}
+						{{ mixin.lgPreviewBlock('lg-news-img2', 'Водитель на Range Rover съехал с дороги и перевернулся. Погибли три человека', '', '27.11.2020', '09:41', 'change-block') }}
+					</div>
+				</div>
+
+				<div class="md-grid mob-black">
+					<div class="container">
+						<div class="md-grid__wrapper">
+							<div class="md-grid__left">
+								{{ mixin.mdPreviewBlock('md-news-img1', 'Водитель опрокинувшегося зерновоза был пьян', '', '27.11.2020', '09:41', 'change-block') }}
+								{{ mixin.mdPreviewBlock('md-news-img1', 'Водитель опрокинувшегося зерновоза был пьян', '', '27.11.2020', '09:41', 'change-block') }}
+								{{ mixin.mdPreviewBlock('md-news-img1', 'Водитель опрокинувшегося зерновоза был пьян', '', '27.11.2020', '09:41', 'change-block') }}
+								<div class="wrapper-sm-preview">
+									<div class="wrapper-sm-preview__block">
+										{{ mixin.smPreviewBlock('В Крымске полицейские задержали подозреваемого в грабеже мужчину', '', '27.11.2020', '09:41', 'change-block') }}
+										{{ mixin.smPreviewBlock('На Кубани снег будет идти еще несколько дней', '', '27.11.2020', '09:41', 'change-block') }}
+										{{ mixin.smPreviewBlock('Кубанские спасатели помогают жителям региона вызволять свои автомобили из снежного плена', '', '27.11.2020', '09:41', 'change-block') }}
+									</div>
+								</div>
+								<div class="wrapper-sm-preview">
+									<div class="wrapper-sm-preview__block">
+										{{ mixin.smPreviewBlock('В Крымске полицейские задержали подозреваемого в грабеже мужчину', '', '27.11.2020', '09:41', 'change-block') }}
+										{{ mixin.smPreviewBlock('На Кубани снег будет идти еще несколько дней', '', '27.11.2020', '09:41', 'change-block') }}
+										{{ mixin.smPreviewBlock('Кубанские спасатели помогают жителям региона вызволять свои автомобили из снежного плена', '', '27.11.2020', '09:41', 'change-block') }}
+									</div>
+								</div>
+								{{ mixin.mdPreviewBlock('md-news-img1', 'Водитель опрокинувшегося зерновоза был пьян', '', '27.11.2020', '09:41', 'change-block') }}
+							</div>
+							<div class="md-grid__right">
+								<div class="sm-wrap-show">
+									<div class="sm-wrap-show__block">
+										<img src="img/sm-imgad1.jpg" alt="">
+										<img class="none" src="img/sm-imgad1-mob.jpg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<hr class="line-offset">
+				</div>
+
+				<div class="wrap-showblockad">
+					<img src="img/blockshadmob2.jpg" alt="">
+				</div>
+				
+				<div class="container">
+					<div class="row-title">
+						<h3 class="title">Общество</h3>
+					</div>
+					<div class="content-grid__wrapper content-grid__wrapper--change content-grid__wrapper--no-offset">
+						{{ mixin.lgPreviewBlock('lg-news-img1', 'Неизвестные обстреляли автобусы с пассажирами', '', '27.11.2020', '09:41', 'main-block') }}
+						{{ mixin.lgPreviewBlock('lg-news-img2', 'Водитель на Range Rover съехал с дороги и перевернулся. Погибли три человека', '', '27.11.2020', '09:41', 'change-block') }}
+					</div>
+				</div>
+
+				<div class="md-grid md-grid--no-offset">
+					<div class="container">
+						<div class="md-grid__wrapper">
+							<div class="md-grid__left">
+								{{ mixin.mdPreviewBlock('md-news-img1', 'Водитель опрокинувшегося зерновоза был пьян', '', '27.11.2020', '09:41', 'change-block') }}
+								{{ mixin.mdPreviewBlock('md-news-img1', 'Водитель опрокинувшегося зерновоза был пьян', '', '27.11.2020', '09:41', 'change-block') }}
+								{{ mixin.mdPreviewBlock('md-news-img1', 'Водитель опрокинувшегося зерновоза был пьян', '', '27.11.2020', '09:41', 'change-block') }}
+								<div class="wrapper-sm-preview">
+									<div class="wrapper-sm-preview__block">
+										{{ mixin.smPreviewBlock('В Крымске полицейские задержали подозреваемого в грабеже мужчину', '', '27.11.2020', '09:41', 'change-block') }}
+										{{ mixin.smPreviewBlock('На Кубани снег будет идти еще несколько дней', '', '27.11.2020', '09:41', 'change-block') }}
+										{{ mixin.smPreviewBlock('Кубанские спасатели помогают жителям региона вызволять свои автомобили из снежного плена', '', '27.11.2020', '09:41', 'change-block') }}
+									</div>
+								</div>
+								<div class="wrapper-sm-preview">
+									<div class="wrapper-sm-preview__block">
+										{{ mixin.smPreviewBlock('В Крымске полицейские задержали подозреваемого в грабеже мужчину', '', '27.11.2020', '09:41', 'change-block') }}
+										{{ mixin.smPreviewBlock('На Кубани снег будет идти еще несколько дней', '', '27.11.2020', '09:41', 'change-block') }}
+										{{ mixin.smPreviewBlock('Кубанские спасатели помогают жителям региона вызволять свои автомобили из снежного плена', '', '27.11.2020', '09:41', 'change-block') }}
+									</div>
+								</div>
+								{{ mixin.mdPreviewBlock('md-news-img1', 'Водитель опрокинувшегося зерновоза был пьян', '', '27.11.2020', '09:41', 'change-block') }}
+							</div>
+							<div class="md-grid__right">
+								<div class="sm-wrap-show">
+									<img class="none" src="img/sm-imgad2-mob.jpg" alt="" class="none">
+									<div class="sm-wrap-show__block">
+										<img src="img/sm-imgad2.jpg" alt="">
+									</div>
+									<div class="sm-wrap-show__block">
+										<img src="img/sm-imgad3.jpg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<hr class="line-offset">
+				</div>
+
+				<div class="wrap-showblockad">
+					<img src="img/blockshadmob3.jpg" alt="">
+				</div>
+
+				<div class="container">
+					<div class="row-title">
+						<h3 class="title">Культура</h3>
+					</div>
+					<div class="content-grid__wrapper content-grid__wrapper--change">
+						{{ mixin.xlgPreviewBlock('xlg-news-img1', 'Школьный автобус попал в ДТП на скользком участке дороги', '22.01.2021', '13:18') }}
+						{{ mixin.lgPreviewBlock('lg-news-img1', 'Неизвестные обстреляли автобусы с пассажирами', '', '27.11.2020', '09:41', 'change-block') }}
+						{{ mixin.lgPreviewBlock('lg-news-img2', 'Водитель на Range Rover съехал с дороги и перевернулся. Погибли три человека', '', '27.11.2020', '09:41', 'change-block') }}
+					</div>
+				</div>
+
+				<div class="md-grid md-grid--no-offset">
+					<div class="container">
+						<div class="md-grid__wrapper">
+							<div class="md-grid__left">
+								{{ mixin.mdPreviewBlock('md-news-img1', 'Водитель опрокинувшегося зерновоза был пьян', '', '27.11.2020', '09:41', 'change-block') }}
+								{{ mixin.mdPreviewBlock('md-news-img1', 'Водитель опрокинувшегося зерновоза был пьян', '', '27.11.2020', '09:41', 'change-block') }}
+								{{ mixin.mdPreviewBlock('md-news-img1', 'Водитель опрокинувшегося зерновоза был пьян', '', '27.11.2020', '09:41', 'change-block') }}
+								<div class="wrapper-sm-preview">
+									<div class="wrapper-sm-preview__block">
+										{{ mixin.smPreviewBlock('В Крымске полицейские задержали подозреваемого в грабеже мужчину', '', '27.11.2020', '09:41', 'change-block') }}
+										{{ mixin.smPreviewBlock('На Кубани снег будет идти еще несколько дней', '', '27.11.2020', '09:41', 'change-block') }}
+										{{ mixin.smPreviewBlock('Кубанские спасатели помогают жителям региона вызволять свои автомобили из снежного плена', '', '27.11.2020', '09:41', 'change-block') }}
+									</div>
+								</div>
+								<div class="wrapper-sm-preview">
+									<div class="wrapper-sm-preview__block">
+										{{ mixin.smPreviewBlock('В Крымске полицейские задержали подозреваемого в грабеже мужчину', '', '27.11.2020', '09:41', 'change-block') }}
+										{{ mixin.smPreviewBlock('На Кубани снег будет идти еще несколько дней', '', '27.11.2020', '09:41', 'change-block') }}
+										{{ mixin.smPreviewBlock('Кубанские спасатели помогают жителям региона вызволять свои автомобили из снежного плена', '', '27.11.2020', '09:41', 'change-block') }}
+									</div>
+								</div>
+								{{ mixin.mdPreviewBlock('md-news-img1', 'Водитель опрокинувшегося зерновоза был пьян', '', '27.11.2020', '09:41', 'change-block') }}
+							</div>
+							<div class="md-grid__right">
+								<div class="sm-wrap-show">
+									<div class="sm-wrap-show__block">
+										<img src="img/sm-imgad1.jpg" alt="">
+										<img class="none" src="img/sm-imgad1-mob.jpg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="wrap-showblockad">
+					<img src="img/blockshadmob4.jpg" alt="">
+				</div>
+			</main>
+			<footer>
+				{% include "../templates/include/footer.njk" %}
+			</footer>
+		</div>
+		<div class="content-grid__right">
+			<div class="lg-wrap-show">
+				<img src="img/lgshow1.jpg" alt="">
+			</div>
+		</div>
+	</div>
+{% endblock %}
+
+{% block Scripts %}
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script>
+	const swiper = new Swiper('.topic-slider', {
+		//- slidesPerView: 3,
+		loop: true,
+		spaceBetween: 0,
+		navigation: {
+			nextEl: '.topic-arrow--next',
+			prevEl: '.topic-arrow--prev',
+		},
+		breakpoints: {
+			1600: {
+				slidesPerView: 3,
+			},
+			767: {
+				slidesPerView: 2,
+			},
+			0: {
+				slidesPerView: 'auto',
+			}
+		}
+	});
+</script>
+{% endblock %}
