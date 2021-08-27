@@ -1,3 +1,19 @@
+footer {
+	@media (max-width: 575px) {
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			height: 10px;
+			left: 0;
+			right: 0;
+			top: 0;
+			background-color: #EEF1F1;
+
+		}
+	}
+}
+
 .link-bloks-wrapper {
 	background-color: rgba($color: #EEF1F1, $alpha: 0.5);
 
@@ -13,6 +29,7 @@
 
 		@media (max-width: 575px) {
 			grid-template-columns: 1fr;
+			padding: 20px 0;
 		}
 	}
 }
@@ -32,6 +49,10 @@
 			font-size: 16px;
 			line-height: 14px;
 			margin-bottom: 6px;
+			transition: all 0.3s ease-in-out;
+			&:hover {
+				color: $hover-color-one;
+			}
 		}
 
 		p {

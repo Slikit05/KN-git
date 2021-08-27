@@ -3,7 +3,7 @@ header {
 
 	// position: relative;
 	// z-index: 30;
-	@media (max-width: 1400px) {
+	@media (max-width: 767px) {
 		min-height: 61px;
 	}
 }
@@ -90,11 +90,17 @@ header {
 	@media (max-width: 359px) {
 		margin-right: 10px;
 	}
+	&:hover {
+		.burger__line {
+			background-color: $hover-color-one;
+		}
+	}
 
 	&__line {
 		height: 2px;
 		background-color: #141E26;
 		width: 100%;
+		transition: all 0.3s ease-in-out;
 
 		&:nth-child(2) {
 			max-width: 50%;
@@ -148,7 +154,7 @@ header {
 		transition: color 0.3s ease-in-out;
 
 		&:hover {
-			color: #E41113;
+			color: $hover-color-one;
 		}
 	}
 }
@@ -156,11 +162,20 @@ header {
 .search-icon {
 	background-color: transparent;
 	cursor: pointer;
+	&:hover {
+		svg {
+			stroke: $hover-color-one;
+			fill: $hover-color-one;
+		}
+	}
 	svg {
 		width: 30px;
 		height: 30px;
 		cursor: pointer;
+		stroke: #141E26;
+		fill: #141E26;
 		pointer-events: none;
+		transition: all 0.3s ease-in-out;
 	}
 }
 

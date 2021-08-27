@@ -1,0 +1,172 @@
+{% extends "__layout.njk" %}
+
+{% block Link %}
+<link rel="stylesheet" href="css/flatpickr.min.css">
+{% endblock %}
+
+{% block Header %}
+{% endblock %}
+
+{% block Content %}
+	<div class="content-grid">
+		<div class="content-grid__left">
+			<main>
+				<div class="container inner-offset">
+					<div class="row-title row-title--mob-show">
+						<h3 class="title">Авторы</h3>
+						<div class="block-calendar">
+							<div class="block-calendar__wrap" data-show-calendar>
+								<svg width="24" height="23" viewBox="0 0 24 23" xmlns="http://www.w3.org/2000/svg">
+									<rect x="0.5" y="3.5" width="23" height="19" fill="none"/>
+									<rect x="2" width="20" height="1" stroke="none"/>
+									<rect x="3" y="6" width="4" height="1" stroke="none"/>
+									<rect x="3" y="10" width="4" height="1" stroke="none"/>
+									<rect x="3" y="14" width="4" height="1" stroke="none"/>
+									<rect x="3" y="18" width="4" height="1" stroke="none"/>
+									<rect x="10" y="6" width="4" height="1" stroke="none"/>
+									<rect x="10" y="10" width="4" height="1" stroke="none"/>
+									<rect x="10" y="14" width="4" height="1" stroke="none"/>
+									<rect x="10" y="18" width="4" height="1" stroke="none"/>
+									<rect x="17" y="6" width="4" height="1" stroke="none"/>
+									<rect x="17" y="10" width="4" height="1" stroke="none"/>
+									<rect x="17" y="14" width="4" height="1" stroke="none"/>
+								</svg>
+							</div>
+							<div class="drop-down-calendar">
+								<div class="drop-down-calendar__up">
+									<input type="text" placeholder="Пожалуйста выберите дату" data-calendar>
+								</div>
+								<div class="drop-down-calendar__down">
+									<span class="drop-down-calendar__btn" data-change-calendar>Выбрать период</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="content-grid__wrapper">
+						{{ mixin.xlgPreviewBlock('xlg-news-img1', 'До +17: в Краснодарский край придет аномальное тепло', '22.01.2021', '13:18') }}
+						{{ mixin.lgPreviewBlock('lg-news-img1', 'Кубанские спасатели помогают жителям региона вызволять свои автомобили из снежного плена', '', '27.11.2020', '09:41', 'change-block') }}
+						{{ mixin.lgPreviewBlock('lg-news-img2', 'Ученые рассказали, когда может закончится для россиян масочный режим', '', '27.11.2020', '09:41', 'change-block') }}
+						{{ mixin.mdPreviewBlock('md-news-img2', 'Роспотребнадзор разработал высокоточный экспресс-тест на коронавирус', '', '27.11.2020', '09:41') }}
+						{{ mixin.mdPreviewBlock('md-news-img2', 'Роспотребнадзор разработал высокоточный экспресс-тест на коронавирус', '', '27.11.2020', '09:41') }}
+						{{ mixin.mdPreviewBlock('md-news-img2', 'Роспотребнадзор разработал высокоточный экспресс-тест на коронавирус', '', '27.11.2020', '09:41') }}
+						<div class="wrapper-sm-preview wrapper-sm-preview--change">
+							<div class="wrapper-sm-preview__block">
+								{{ mixin.smPreviewBlock('В Краснодарском крае коронавирус забрал жизни 14 человек', '', '27.11.2020', '09:41', 'change-block') }}
+								{{ mixin.smPreviewBlock('Краснодарский край стал одним из регионов России с самой высокой долей просроченных кредитов', '', '27.11.2020', '09:41', 'change-block') }}
+							</div>
+						</div>
+						{{ mixin.mdPreviewBlock('md-news-img2', 'Роспотребнадзор разработал высокоточный экспресс-тест на коронавирус', '', '27.11.2020', '09:41') }}
+						{{ mixin.mdPreviewBlock('md-news-img2', 'Роспотребнадзор разработал высокоточный экспресс-тест на коронавирус', '', '27.11.2020', '09:41') }}
+					</div>
+					<div class="wrap-show">
+						<img src="img/lg-imgaad1.jpg" alt="">
+					</div>
+					<button class="btn-show-more">
+						<span>Показать еще</span>
+					</button>
+					<div class="pagination">
+						<a href="#" class="pagination__btn">
+							<svg>
+								<use xlink:href="img/sprite.svg#svg--arrow-slider"></use>
+							</svg>
+							<span>Предыдущая</span>
+						</a>
+						<ul class="pagination__list">
+							<li class="pagination__item">
+								<a href="#" class="pagination__text pagination__text--active">1</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__text">2</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__text">3</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__text">4</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__text">5</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__text">6</a>
+							</li>
+							<li class="pagination__item pagination__item--tb-none">
+								<a href="#" class="pagination__text">7</a>
+							</li>
+							<li class="pagination__item pagination__item--tb-none">
+								<a href="#" class="pagination__text">8</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__text">...</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__text">1028</a>
+							</li>
+						</ul>
+						<a href="#" class="pagination__btn">
+							<span>Следующая</span>
+							<svg>
+								<use xlink:href="img/sprite.svg#svg--arrow-slider"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+
+
+			</main>
+			<footer>
+				{% include "../templates/include/footer.njk" %}
+			</footer>
+		</div>
+		<div class="content-grid__right">
+			<div class="lg-wrap-show">
+				<img src="img/mdshow1.jpg" alt="">
+			</div>
+		</div>
+	</div>
+{% endblock %}
+
+{% block Scripts %}
+	<script src="js/flatpickr.js"></script>
+	<script src="js/flatpickr-ru.js"></script>
+	<script>
+		let calendarDateOne = flatpickr("[data-calendar]", {
+			inline: true,
+			"locale": "ru",
+			dateFormat: "Y-m-d",
+			monthSelectorType: "static",
+			mode: "single",
+			disableMobile: "true",
+			nextArrow: "<svg width='18' height='21' viewBox='0 0 18 21' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M9 1L9 19M9 19L17 10.9543M9 19L1 10.9543' stroke-width='2' stroke-linecap='round'/></svg>",
+			prevArrow: "<svg width='18' height='21' viewBox='0 0 18 21' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M9 1L9 19M9 19L17 10.9543M9 19L1 10.9543' stroke-width='2' stroke-linecap='round'/></svg>",
+		});
+
+		(function() {
+			const inputCalendar = document.querySelector("[data-calendar]");
+			document.addEventListener("click", function(event) {
+				if (event.target.hasAttribute("data-change-calendar")) {
+					calendarDateOne.clear();
+					if (event.target.classList.contains("range-calendar")) {
+						event.target.classList.remove("range-calendar");
+						event.target.textContent = "Выбрать период";						
+						inputCalendar.setAttribute("placeholder", "Пожалуйста выберите дату");
+						calendarDateOne.config.mode = "single"
+					} else {					
+						event.target.classList.add("range-calendar");
+						event.target.textContent = "Выбрать дату";
+						inputCalendar.setAttribute("placeholder", "Пожалуйста выберите диапазон");
+						calendarDateOne.config.mode = "range"
+					}
+				}
+
+				if (event.target.hasAttribute("data-show-calendar")) {
+					if (event.target.classList.contains("show-calendar")) {
+						event.target.classList.remove("show-calendar");
+					} else {
+						event.target.classList.add("show-calendar");
+					}
+				}
+			});
+		})();
+	</script>
+{% endblock %}

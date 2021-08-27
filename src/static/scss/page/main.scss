@@ -86,7 +86,7 @@
     height: 100%;
 
     @media (max-width: 575px) {
-      background-color: #EEF1F1;
+      // background-color: #EEF1F1;
     }
   }
 
@@ -245,12 +245,25 @@
 
 .row-title {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   justify-content: space-between;
   margin-bottom: 20px;
 
   @media (max-width: 575px) {
     display: none;
+  }
+  &--mob-show {
+    @media (max-width: 575px) {
+      display: flex;
+      .title {
+        padding-top: 0;
+        font-size: 26px;
+        line-height: normal;
+        &::before {
+          display: none;
+        }
+      }
+    }
   }
 }
 
@@ -262,7 +275,7 @@
   position: relative;
   padding-top: 21px;
 
-  @media (max-width: 1023px) {
+  @media (max-width: 1400px) {
     font-size: 30px;
     line-height: 36px;
   }

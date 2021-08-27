@@ -1,0 +1,127 @@
+{% set noSwipeCategory = "true" %}
+{% extends "__layout.njk" %}
+
+{% block Link %}
+<link rel="stylesheet" href="css/flatpickr.min.css">
+{% endblock %}
+
+{% block Header %}
+{% endblock %}
+
+{% block Content %}
+	<div class="content-grid">
+		<div class="content-grid__left">
+			<main>
+				<div class="container">
+					<div class="author-block">
+						<div class="author-block__up">
+							<picture>
+								<source srcset="img/author-lg-mob.jpg" type="image/jpg" media="(max-width: 575px)"/>
+								<source srcset="img/author-lg-mob.webp" type="image/webp" media="(max-width: 575px)"/>
+								<source srcset="img/author-lg.jpg" type="image/jpg" />
+								<img alt="img/author-lg.webp" />
+							</picture>
+							<div class="author-block__wrapper">
+								<div class="center-container">
+									<a href="#" class="category-block"><span>Все авторы</span><sup>10</sup></a>
+									<h2 class="author-block__title">Ивановский<br> Иван Алексеевич</h2>
+								</div>
+							</div>
+						</div>
+						<div class="author-block__down">
+							<div class="center-container">
+								<div class="author-block__area">
+									<p>Частица едва ли квантуема. В условиях электромагнитных помех, неизбежных при полевых измерениях, не всегда можно опредлить, когда именно колебание тормозит фонон. Электрон мономолекулярно усиливает электронный луч, и этот процесс может повторяться многократно. Колебание, как следует из совокупности экспериментальных наблюдений, отражает кристалл. Мишень, в отличие от классического случая, отражает электронный разрыв. Любое возмущение затухает, если поверхность нейтрализует экзотермический лазер.</p>
+								</div>
+								<div class="row-title row-title--mob-show">
+									<h3 class="title">Статьи Ивана</h3>
+								</div>
+							</div>							
+						</div>
+					</div>
+					<div class="content-grid__wrapper">
+						{{ mixin.lgPreviewBlock('lg-news-img1', 'Кубанские спасатели помогают жителям региона вызволять свои автомобили из снежного плена', '', '27.11.2020', '09:41', 'change-block-two') }}
+						{{ mixin.lgPreviewBlock('lg-news-img2', 'Ученые рассказали, когда может закончится для россиян масочный режим', '', '27.11.2020', '09:41', 'change-block-two') }}
+						{{ mixin.mdPreviewBlock('md-news-img2', 'Роспотребнадзор разработал высокоточный экспресс-тест на коронавирус', '', '27.11.2020', '09:41', 'change-block-two') }}
+						{{ mixin.mdPreviewBlock('md-news-img2', 'Роспотребнадзор разработал высокоточный экспресс-тест на коронавирус', '', '27.11.2020', '09:41', 'change-block-two') }}
+						{{ mixin.mdPreviewBlock('md-news-img2', 'Роспотребнадзор разработал высокоточный экспресс-тест на коронавирус', '', '27.11.2020', '09:41', 'change-block-two') }}
+						<div class="wrapper-sm-preview wrapper-sm-preview--change">
+							<div class="wrapper-sm-preview__block">
+								{{ mixin.smPreviewBlock('В Краснодарском крае коронавирус забрал жизни 14 человек', '', '27.11.2020', '09:41', 'change-block-two') }}
+								{{ mixin.smPreviewBlock('Краснодарский край стал одним из регионов России с самой высокой долей просроченных кредитов', '', '27.11.2020', '09:41', 'change-block-two') }}
+							</div>
+						</div>
+						{{ mixin.mdPreviewBlock('md-news-img2', 'Роспотребнадзор разработал высокоточный экспресс-тест на коронавирус', '', '27.11.2020', '09:41', 'change-block-two') }}
+						{{ mixin.mdPreviewBlock('md-news-img2', 'Роспотребнадзор разработал высокоточный экспресс-тест на коронавирус', '', '27.11.2020', '09:41', 'change-block-two') }}
+					</div>
+					<div class="wrap-show">
+						<img src="img/lg-imgaad1.jpg" alt="">
+					</div>
+					<button class="btn-show-more">
+						<span>Показать еще</span>
+					</button>
+					<div class="pagination">
+						<a href="#" class="pagination__btn">
+							<svg>
+								<use xlink:href="img/sprite.svg#svg--arrow-slider"></use>
+							</svg>
+							<span>Предыдущая</span>
+						</a>
+						<ul class="pagination__list">
+							<li class="pagination__item">
+								<a href="#" class="pagination__text pagination__text--active">1</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__text">2</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__text">3</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__text">4</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__text">5</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__text">6</a>
+							</li>
+							<li class="pagination__item pagination__item--tb-none">
+								<a href="#" class="pagination__text">7</a>
+							</li>
+							<li class="pagination__item pagination__item--tb-none">
+								<a href="#" class="pagination__text">8</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__text">...</a>
+							</li>
+							<li class="pagination__item">
+								<a href="#" class="pagination__text">1028</a>
+							</li>
+						</ul>
+						<a href="#" class="pagination__btn">
+							<span>Следующая</span>
+							<svg>
+								<use xlink:href="img/sprite.svg#svg--arrow-slider"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+
+
+			</main>
+			<footer>
+				{% include "../templates/include/footer.njk" %}
+			</footer>
+		</div>
+		<div class="content-grid__right">
+			<div class="lg-wrap-show">
+				<img src="img/mdshow1.jpg" alt="">
+			</div>
+		</div>
+	</div>
+{% endblock %}
+
+{% block Scripts %}
+	
+{% endblock %}

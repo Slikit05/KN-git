@@ -20,15 +20,20 @@
 
         {% endblock %}
     </header>
-    <div class="swipe-category">
-        <div class="swipe-category__wrapper">
-            <a href="#" class="swipe-category__block"><span>Власть</span><sup>+2</sup></a>
-            <a href="#" class="swipe-category__block"><span>Экономика</span><sup>+16</sup></a>
-            <a href="#" class="swipe-category__block"><span>Спорт</span><sup>+16</sup></a>
-            <a href="#" class="swipe-category__block"><span>Происшествия</span><sup>+8</sup></a>
-            <a href="#" class="swipe-category__block"><span>Власть</span><sup>+2</sup></a>
+    {% if noSwipeCategory %}
+            
+    {% else %}
+        <div class="swipe-category">
+            <div class="swipe-category__wrapper">
+                <a href="#" class="swipe-category__block"><span>Власть</span><sup>+2</sup></a>
+                <a href="#" class="swipe-category__block"><span>Экономика</span><sup>+16</sup></a>
+                <a href="#" class="swipe-category__block"><span>Спорт</span><sup>+16</sup></a>
+                <a href="#" class="swipe-category__block"><span>Происшествия</span><sup>+8</sup></a>
+                <a href="#" class="swipe-category__block"><span>Власть</span><sup>+2</sup></a>
+            </div>
         </div>
-    </div>
+    {% endif %}
+    
    
     <div class="grid-page">
         <div class="grid-page__left">
