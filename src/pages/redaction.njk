@@ -1,0 +1,136 @@
+{% set noSwipeCategory = "true" %}
+{% extends "__layout.njk" %}
+
+{% block Link %}
+{# <link rel="stylesheet" href="css/flatpickr.min.css"> #}
+{% endblock %}
+
+{% block Header %}
+{% endblock %}
+
+{% block Content %}
+	<div class="content-grid">
+		<div class="content-grid__left">
+			<main>
+				<div class="center-container inner-offset">
+					<div class="row-title row-title--mob-show">
+						<h3 class="title">Редакция</h3>
+					</div>
+
+          <div class="contacts">
+            <div class="contacts__area">
+              <p>Колебание усиливает электрон. Примесь принципиально неизмерима. Струя, как и везде в пределах наблюдаемой вселенной, бифокально притягивает гравитационный разрыв, как и предсказывает общая теория поля. В ряде недавних экспериментов магнит концентрирует кварк. Расслоение синхронно. Фронт по определению вращает кристалл.</p>
+            </div>
+            <div class="contacts__grid">
+              <div class="contacts-block">
+                <h5>Адрес редакции:</h5>
+                <span>350000, г. Краснодар, ул. Пашковская, 2</span>
+              </div>
+              <div class="contacts-block">
+                <h5>Официальные объявления:</h5>
+                <a href="mailto:2551925reklama@mail.ru">2551925reklama@mail.ru</a>
+                <span>+7 (861) 253-98-38</span>
+              </div>
+              <div class="contacts-block">
+                <h5>Приемная главного редактора:</h5>
+                <span>+7 (861) 259-60-27</span>
+              </div>
+              <div class="contacts-block">
+                <h5>Отдел подписки:</h5>
+                <span>+7 (861) 259-33-52</span>
+              </div>
+              <div class="contacts-block">
+                <h5>Заместители главного редактора:</h5>
+                <span>+7 (861) 259-31-23, 259-60-09, 259-63-34</span>
+              </div>
+              <div class="contacts-block">
+                <h5>Служба новостей:</h5>
+                <span>+7 (861) 259-60-91, 259-34-56,</span>
+                <a href="mailto:sobcor-kn@mail.ru">sobcor-kn@mail.ru</a>
+              </div>
+              <div class="contacts-block">
+                <h5>Рекламное агентство:</h5>
+                <span>+7 (861) 255-19-25, 255-02-82, 255-96-60, 259-60-74, 259-03-23,</span>
+                <a href="mailto:reklama.kubnews@gmail.com">reklama.kubnews@gmail.com</a>
+              </div>
+              <div class="contacts-block">
+                <h5>Общий отдел:</h5>
+                <span>+7 (861) 255-85-87</span>
+              </div>
+            </div>
+          </div>
+					
+					<button class="btn-show-more btn-show-more--change" data-click-modal="push">
+						<span>Прислать новость</span>
+					</button>
+          <div class="map" id="map"></div>
+				</div>
+			</main>
+			<footer>
+				{% include "../templates/include/footer.njk" %}
+			</footer>
+		</div>
+		<div class="content-grid__right">
+			<div class="lg-wrap-show">
+				<img src="img/mdshow1.jpg" alt="">
+			</div>
+		</div>
+	</div>
+  {% include "include/modal.njk" %}
+{% endblock %}
+
+{% block Scripts %}
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&fc075a8b-9c59-4b8d-b8cb-0172442a14a7" type="text/javascript"></script>
+  <script src="js/inputmask.js"></script>
+	<script src="js/filepond.min.js"></script>
+	<script src="js/filepond-plugin-file-encode.js"></script>
+	<script>
+		//Inputmask("(999) 999-99-99").mask("[type='tel']");
+
+		const inputElement  = document.querySelector('input[type="file"]');
+		const pond = FilePond.create(
+			inputElement, {
+				allowDrop: false,
+				allowPaste: false,
+				allowReplace: false,
+				allowRevert: false,
+				allowProcess: false,
+				onupdatefiles: (files) => {					
+					const textAddFile = document.querySelector(".filepond--drop-label");
+					if (files.length === 0) {						
+						textAddFile.style.display = 'block';
+					} else {
+						textAddFile.style.display = 'none';
+					}
+				},
+			}
+		);
+		
+		document.querySelector(".filepond--credits").remove();
+    
+		ymaps.ready(function () {
+      var myMap = new ymaps.Map('map', {
+              center: [55.751574, 37.573856],
+              zoom: 14
+          }, {
+              searchControlProvider: 'yandex#search'
+          }),
+
+          myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+          }, {
+              // Опции.
+              // Необходимо указать данный тип макета.
+              iconLayout: 'default#image',
+              // Своё изображение иконки метки.
+              iconImageHref: 'img/svg/balun.svg',
+              // Размеры метки.
+              iconImageSize: [30, 42],
+              // Смещение левого верхнего угла иконки относительно
+              // её "ножки" (точки привязки).
+              iconImageOffset: [-5, -38]
+          });
+
+      myMap.geoObjects.add(myPlacemark);
+    });
+	</script>
+{% endblock %}

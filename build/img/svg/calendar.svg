@@ -1,15 +1,1 @@
-<svg width="24" height="23" viewBox="0 0 24 23" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.5" y="3.5" width="23" height="19" fill="none"/>
-<rect x="2" width="20" height="1" stroke="none"/>
-<rect x="3" y="6" width="4" height="1" stroke="none"/>
-<rect x="3" y="10" width="4" height="1" stroke="none"/>
-<rect x="3" y="14" width="4" height="1" stroke="none"/>
-<rect x="3" y="18" width="4" height="1" stroke="none"/>
-<rect x="10" y="6" width="4" height="1" stroke="none"/>
-<rect x="10" y="10" width="4" height="1" stroke="none"/>
-<rect x="10" y="14" width="4" height="1" stroke="none"/>
-<rect x="10" y="18" width="4" height="1" stroke="none"/>
-<rect x="17" y="6" width="4" height="1" stroke="none"/>
-<rect x="17" y="10" width="4" height="1" stroke="none"/>
-<rect x="17" y="14" width="4" height="1" stroke="none"/>
-</svg>
+<svg width="24" height="23" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M.5 3.5h23v19H.5z"/><path d="M2 0h20v1H2zm1 6h4v1H3zm0 4h4v1H3zm0 4h4v1H3zm0 4h4v1H3zm7-12h4v1h-4zm0 4h4v1h-4zm0 4h4v1h-4zm0 4h4v1h-4zm7-12h4v1h-4zm0 4h4v1h-4zm0 4h4v1h-4z"/></svg>

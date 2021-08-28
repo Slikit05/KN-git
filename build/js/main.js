@@ -88,3 +88,30 @@
 	filter.addEventListener("keyup", filterItems);
 
 })();
+
+
+(function () {
+  window.addEventListener("click", function (event) {
+
+    if (event.target.dataset.clickModal) {
+      event.preventDefault();
+
+      const btnName = event.target.dataset.clickModal;
+
+      document.querySelector("#" + btnName).classList.add("modal--open");
+      document.querySelector("html").classList.add("hiden");
+    };
+
+    if (event.target.classList.contains("modal__overlay")) {
+      event.target.closest(".modal").classList.remove("modal--open");
+      document.querySelector("html").classList.remove("hiden");
+    } else if (event.target.classList.contains("close")) {
+      event.target.closest(".modal").classList.remove("modal--open");
+      document.querySelector("html").classList.remove("hiden");
+      if (document.querySelector(".event-text")) {
+        document.querySelector(".event-text").innerHTML = "";
+        document.querySelector(".event-text").classList.remove("event-text--change");
+      }
+    };
+  });
+})();
