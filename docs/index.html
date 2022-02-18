@@ -1,0 +1,1735 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <section class="page-header">
+      <div class="overlay"></div>
+      <div class="search-for-site" data-search-site>
+        <div class="search-for-site__container">
+          <form class="search-for-site__form" action="">
+            <div class="search-for-site__wrap">
+              <input type="text" placeholder="Поиск по сайту" />
+              <button class="search-icon">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="14" cy="14" r="8" fill="none" stroke-width="2" />
+                  <path d="M23.2929 24.7071C23.6834 25.0976 24.3166 25.0976 24.7071 24.7071C25.0976 24.3166 25.0976 23.6834 24.7071 23.2929L23.2929 24.7071ZM24.7071 23.2929L20.7071 19.2929L19.2929 20.7071L23.2929 24.7071L24.7071 23.2929Z" stroke="none" />
+                </svg>
+              </button>
+            </div>
+          </form>
+          <div class="close" data-close-search></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="page-header__wrapper">
+
+          <div class="page-header__left">
+            <div class="burger">
+              <div class="burger__line"></div>
+              <div class="burger__line"></div>
+              <div class="burger__line"></div>
+            </div><a class="logo" href="#"><img src="img/logo.svg" alt="" /></a>
+          </div>
+          <div class="page-header__middle">
+            <div class="navigation">
+              <ul class="navigation__list">
+                <li class="navigation__item"><a class="navigation__link" href="#">Все новости</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">Власть</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">Экономика</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">Происшествия</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">Спорт</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">Культура</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">Туризм</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#">Спецпроекты</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="page-header__right">
+            <div class="new-news new-news--mark">
+              <div class="new-news__wrap-icon">
+                <svg>
+                  <use xlink:href="img/sprite.svg#svg--icons-news24"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="search-icon" data-show-search>
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="14" cy="14" r="8" fill="none" stroke-width="2" />
+                <path d="M23.2929 24.7071C23.6834 25.0976 24.3166 25.0976 24.7071 24.7071C25.0976 24.3166 25.0976 23.6834 24.7071 23.2929L23.2929 24.7071ZM24.7071 23.2929L20.7071 19.2929L19.2929 20.7071L23.2929 24.7071L24.7071 23.2929Z" stroke="none" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="mobile-menu" data-mobile-menu>
+      <div class="mobile-menu__container">
+        <div class="mobile-menu__up">
+          <div class="city">
+            <span class="city__link" data-city-modal>
+              <svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" stroke="none" d="M15 25L21.0049 17.4939C25.033 12.4588 21.4481 5 15 5C8.5519 5 4.96703 12.4588 8.99513 17.4939L15 25ZM15 23.3992L20.224 16.8692C23.7283 12.4888 20.6096 6 15 6C9.3904 6 6.27171 12.4888 9.776 16.8692L15 23.3992Z" />
+                <circle cx="15" cy="13" r="2.5" fill="none" />
+              </svg>
+              <span>Славянск-на-Кубани</span>
+            </span>
+          </div>
+          <div class="close" data-close-menu></div>
+        </div>
+        <div class="mobile-menu__wrapper">
+          <nav class="menu-nav">
+            <ul class="menu-nav__list">
+              <li class="menu-nav__item">
+                <div class="menu-nav__row"><a class="menu-nav__link" href="#">Все новости</a></div>
+              </li>
+              <li class="menu-nav__item">
+                <div class="menu-nav__row"><a class="menu-nav__link" href="#">Общество</a></div>
+              </li>
+              <li class="menu-nav__item">
+                <div class="menu-nav__row"><a class="menu-nav__link" href="#">Власть</a></div>
+              </li>
+              <li class="menu-nav__item">
+                <div class="menu-nav__row"><a class="menu-nav__link" href="#">Экономика</a></div>
+              </li>
+              <li class="menu-nav__item">
+                <div class="menu-nav__row"><a class="menu-nav__link" href="#">Происшествия</a></div>
+              </li>
+              <li class="menu-nav__item">
+                <div class="menu-nav__row"><a class="menu-nav__link" href="#">Спорт</a></div>
+              </li>
+              <li class="menu-nav__item">
+                <div class="menu-nav__row"><a class="menu-nav__link" href="#">Культура</a></div>
+              </li>
+              <li class="menu-nav__item">
+                <div class="menu-nav__row"><a class="menu-nav__link" href="#">Фото</a></div>
+              </li>
+              <li class="menu-nav__item">
+                <div class="menu-nav__row"><a class="menu-nav__link" href="#">Видео</a></div>
+              </li>
+              <li class="menu-nav__item">
+                <div class="menu-nav__row"><a class="menu-nav__link" href="#">Туризм</a></div>
+              </li>
+              <li class="menu-nav__item">
+                <div class="menu-nav__row"><a class="menu-nav__link" href="#">Сельское хозяйство</a></div>
+              </li>
+              <li class="menu-nav__item">
+                <div class="menu-nav__row"><a class="menu-nav__link" href="#">Интересы</a></div>
+              </li>
+              <li class="menu-nav__item">
+                <div class="menu-nav__row accordion-up">
+                  <span class="menu-nav__link">Спецпроекты</span>
+                  <svg>
+                    <use xlink:href="img/sprite.svg#svg--arrow-slider"></use>
+                  </svg>
+                </div>
+                <div class="accordion-drop-down">
+                  <div class="accordion-drop-down__area">
+                    <ul>
+                      <li><a href="#"><span>Кубань 2000 — 2018</span></a></li>
+                      <li><a href="#"><span>Кубань. Формат успеха</span></a></li>
+                      <li><a href="#"><span>75-летие Победы!</span></a></li>
+                      <li><a href="#"><span>Я помню День Победы</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mobile-menu__down">
+          <div class="mobile-menu__wrap-link">
+            <a class="mobile-menu__link" href="#">Редакция</a>
+            <a class="mobile-menu__link" href="#">Рекламодателям</a>
+            <a class="mobile-menu__link" href="#">Правила использования материалов</a>
+          </div>
+          <a class="tel" href="tel:+78612596027">+7 (861) 259-60-27</a>
+          <span class="adrees">350000, г. Краснодар, ул. Пашковская, 2</span>
+          <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link" href="#"><svg>
+                  <use xlink:href="img/sprite.svg#svg--vk"></use>
+                </svg></a></li>
+            <li class="social-list__item"><a class="social-list__link" href="#"><svg>
+                  <use xlink:href="img/sprite.svg#svg--fa"></use>
+                </svg></a></li>
+            <li class="social-list__item"><a class="social-list__link" href="#"><svg>
+                  <use xlink:href="img/sprite.svg#svg--tw"></use>
+                </svg></a></li>
+            <li class="social-list__item"><a class="social-list__link" href="#"><svg>
+                  <use xlink:href="img/sprite.svg#svg--od"></use>
+                </svg></a></li>
+            <li class="social-list__item"><a class="social-list__link" href="#"><svg>
+                  <use xlink:href="img/sprite.svg#svg--in"></use>
+                </svg></a></li>
+            <li class="social-list__item"><a class="social-list__link" href="#"><svg>
+                  <use xlink:href="img/sprite.svg#svg--te"></use>
+                </svg></a></li>
+          </ul>
+          <p class="mobile-menu__text">Интернет-портал "Кубанские Новости" (18+) зарегистрирован Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций (Роскомнадзор) 31 декабря 2015 г. Номер свидетельства Эл №ФС77-64381. Учредитель - ООО "ГИК "Кубанские Новости" (350000, Краснодар, ул. Пашковская, 2). Главный редактор – Хомутов Е.В.</p>
+          <hr class="mobile-menu__line" />
+          <div class="mobile-menu__flex">
+            <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.32246 15.18H6.99246V10.03L5.32246 11.22V10.2L7.01246 9H7.95246V15.18H9.32246V16H5.32246V15.18ZM12.676 16.1C12.2626 16.1 11.8993 16.05 11.586 15.95C11.2726 15.85 11.0093 15.7133 10.796 15.54C10.5893 15.3667 10.4326 15.1633 10.326 14.93C10.226 14.69 10.176 14.43 10.176 14.15C10.176 13.75 10.3026 13.3933 10.556 13.08C10.8093 12.76 11.1826 12.5333 11.676 12.4C11.496 12.34 11.326 12.26 11.166 12.16C11.0126 12.0533 10.876 11.93 10.756 11.79C10.636 11.65 10.5426 11.4933 10.476 11.32C10.4093 11.14 10.376 10.95 10.376 10.75C10.376 10.49 10.426 10.2467 10.526 10.02C10.626 9.79333 10.7726 9.6 10.966 9.44C11.1593 9.27333 11.3993 9.14333 11.686 9.05C11.9726 8.95 12.3026 8.9 12.676 8.9C13.0493 8.9 13.3793 8.95 13.666 9.05C13.9526 9.14333 14.1926 9.27333 14.386 9.44C14.5793 9.6 14.726 9.79333 14.826 10.02C14.926 10.2467 14.976 10.49 14.976 10.75C14.976 11.15 14.8493 11.49 14.596 11.77C14.3493 12.05 14.0426 12.26 13.676 12.4C14.176 12.5667 14.5493 12.7867 14.796 13.06C15.0493 13.3333 15.176 13.6967 15.176 14.15C15.176 14.43 15.1226 14.69 15.016 14.93C14.916 15.1633 14.7593 15.3667 14.546 15.54C14.3393 15.7133 14.0793 15.85 13.766 15.95C13.4526 16.05 13.0893 16.1 12.676 16.1ZM12.676 15.26C12.9626 15.26 13.206 15.23 13.406 15.17C13.606 15.1033 13.766 15.02 13.886 14.92C14.0126 14.8133 14.1026 14.69 14.156 14.55C14.2093 14.4033 14.236 14.25 14.236 14.09C14.236 13.9033 14.196 13.7333 14.116 13.58C14.0426 13.4267 13.936 13.2933 13.796 13.18C13.656 13.06 13.4893 12.9667 13.296 12.9C13.1093 12.8267 12.9026 12.7767 12.676 12.75C12.4493 12.7767 12.2393 12.8267 12.046 12.9C11.8593 12.9667 11.696 13.0567 11.556 13.17C11.416 13.2833 11.306 13.42 11.226 13.58C11.1526 13.7333 11.116 13.9033 11.116 14.09C11.116 14.25 11.1426 14.4033 11.196 14.55C11.2493 14.69 11.336 14.8133 11.456 14.92C11.5826 15.02 11.746 15.1033 11.946 15.17C12.146 15.23 12.3893 15.26 12.676 15.26ZM12.676 12.05C13.076 11.9967 13.4026 11.87 13.656 11.67C13.9093 11.4633 14.036 11.1733 14.036 10.8C14.036 10.46 13.9226 10.2 13.696 10.02C13.476 9.83333 13.136 9.74 12.676 9.74C12.2093 9.74 11.866 9.83333 11.646 10.02C11.426 10.2 11.316 10.46 11.316 10.8C11.316 11.1733 11.4426 11.4633 11.696 11.67C11.9493 11.87 12.276 11.9967 12.676 12.05ZM18.0395 12.81H16.2295V11.99H18.0395V10.15H18.9195V11.99H20.7295V12.81H18.9195V14.65H18.0395V12.81Z" stroke="none" />
+              <circle cx="12.5" cy="12.5" r="12" fill="none" />
+            </svg>
+            <span class="mobile-menu__sm-text">Кубанские Новости, 2015-2020. Для пользователей старше 18 лет </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="modal-window" data-city-window>
+      <div class="modal-window__overlay">
+        <div class="close" data-close-city></div>
+        <div class="modal-window__up">
+          <h4 class="modal-window__caption">Мой город</h4>
+          <input class="search-city" id="filter" type="text" placeholder="Название города" />
+        </div>
+        <div class="modal-window__content">
+          <ul class="city-list" id="items">
+            <li class="city-list__item">Абинск</li>
+            <li class="city-list__item">Абинск</li>
+            <li class="city-list__item">Анапа</li>
+            <li class="city-list__item">Анапа</li>
+            <li class="city-list__item">Апшеронск</li>
+            <li class="city-list__item">Апшеронск</li>
+            <li class="city-list__item">Армавир</li>
+            <li class="city-list__item">Армавир</li>
+            <li class="city-list__item">Белореченск</li>
+            <li class="city-list__item">Белореченск</li>
+            <li class="city-list__item">Геленджик</li>
+            <li class="city-list__item">Геленджик</li>
+            <li class="city-list__item">Горячий ключ</li>
+            <li class="city-list__item">Горячий ключ</li>
+            <li class="city-list__item">Гулькевичи</li>
+            <li class="city-list__item">Гулькевичи</li>
+            <li class="city-list__item">Ейск</li>
+            <li class="city-list__item">Ейск</li>
+            <li class="city-list__item">Краснодар</li>
+            <li class="city-list__item">Краснодар</li>
+            <li class="city-list__item">Абинск</li>
+            <li class="city-list__item">Абинск</li>
+            <li class="city-list__item">Анапа</li>
+            <li class="city-list__item">Анапа</li>
+            <li class="city-list__item">Апшеронск</li>
+            <li class="city-list__item">Апшеронск</li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+  </header>
+
+  <div class="swipe-category">
+    <div class="swipe-category__wrapper">
+      <a href="#" class="swipe-category__block"><span>Власть</span><sup>+2</sup></a>
+      <a href="#" class="swipe-category__block"><span>Экономика</span><sup>+16</sup></a>
+      <a href="#" class="swipe-category__block"><span>Спорт</span><sup>+16</sup></a>
+      <a href="#" class="swipe-category__block"><span>Происшествия</span><sup>+8</sup></a>
+      <a href="#" class="swipe-category__block"><span>Власть</span><sup>+2</sup></a>
+    </div>
+  </div>
+
+
+
+  <div class="grid-page">
+    <div class="grid-page__left">
+      <section class="sidebar">
+        <div class="sidebar__container">
+          <h3 class="sidebar__title">Новости за 24 часа</h3>
+          <div class="sidebar__wrapper">
+
+            <a class="sidebar__block" href="#">
+              <h4 class="sidebar__caption">Записаться на прививку от COVID-19 можно в любом регионе России</h4>
+              <div class="sidebar__row"><span class="sm-text-info date">02.02.2021</span><span class="sm-text-info time">09:41</span></div>
+            </a>
+
+
+            <a class="sidebar__block" href="#">
+              <h4 class="sidebar__caption">Мошенники обманули мужчину при покупке грузовика на 690 тыс. рублей</h4>
+              <div class="sidebar__row"><span class="sm-text-info date">02.02.2021</span><span class="sm-text-info time">09:41</span></div>
+            </a>
+
+
+            <a class="sidebar__block" href="#">
+              <h4 class="sidebar__caption">Директор сельского клуба ответит в суде за фиктивное трудоустройство концертмейстера</h4>
+              <div class="sidebar__row"><span class="sm-text-info date">02.02.2021</span><span class="sm-text-info time">09:41</span></div>
+            </a>
+
+
+            <a class="sidebar__block" href="#">
+              <h4 class="sidebar__caption">До 2024 года в Краснодарском крае введут около 18 тысяч гектаров мелиорируемых земель</h4>
+              <div class="sidebar__row"><span class="sm-text-info date">02.02.2021</span><span class="sm-text-info time">09:41</span></div>
+            </a>
+
+
+            <a class="sidebar__block" href="#">
+              <h4 class="sidebar__caption">Врач рассказала, на какие болезни указывает неприятный запах изо рта</h4>
+              <div class="sidebar__row"><span class="sm-text-info date">02.02.2021</span><span class="sm-text-info time">09:41</span></div>
+            </a>
+
+            <div class="wrap-myad">
+              <img src="img/imgad1.jpg" alt="">
+            </div>
+
+            <a class="sidebar__block" href="#">
+              <h4 class="sidebar__caption">Записаться на прививку от COVID-19 можно в любом регионе России</h4>
+              <div class="sidebar__row"><span class="sm-text-info date">02.02.2021</span><span class="sm-text-info time">09:41</span></div>
+            </a>
+
+
+            <a class="sidebar__block" href="#">
+              <h4 class="sidebar__caption">Мошенники обманули мужчину при покупке грузовика на 690 тыс. рублей</h4>
+              <div class="sidebar__row"><span class="sm-text-info date">02.02.2021</span><span class="sm-text-info time">09:41</span></div>
+            </a>
+
+
+            <a class="sidebar__block" href="#">
+              <h4 class="sidebar__caption">Директор сельского клуба ответит в суде за фиктивное трудоустройство концертмейстера</h4>
+              <div class="sidebar__row"><span class="sm-text-info date">02.02.2021</span><span class="sm-text-info time">09:41</span></div>
+            </a>
+
+
+            <a class="sidebar__block" href="#">
+              <h4 class="sidebar__caption">До 2024 года в Краснодарском крае введут около 18 тысяч гектаров мелиорируемых земель</h4>
+              <div class="sidebar__row"><span class="sm-text-info date">02.02.2021</span><span class="sm-text-info time">09:41</span></div>
+            </a>
+
+
+            <a class="sidebar__block" href="#">
+              <h4 class="sidebar__caption">Врач рассказала, на какие болезни указывает неприятный запах изо рта</h4>
+              <div class="sidebar__row"><span class="sm-text-info date">02.02.2021</span><span class="sm-text-info time">09:41</span></div>
+            </a>
+
+            <div class="wrap-myad">
+              <img src="img/imgad2.jpg" alt="">
+            </div>
+
+            <a class="sidebar__block" href="#">
+              <h4 class="sidebar__caption">Записаться на прививку от COVID-19 можно в любом регионе России</h4>
+              <div class="sidebar__row"><span class="sm-text-info date">02.02.2021</span><span class="sm-text-info time">09:41</span></div>
+            </a>
+
+
+            <a class="sidebar__block" href="#">
+              <h4 class="sidebar__caption">Мошенники обманули мужчину при покупке грузовика на 690 тыс. рублей</h4>
+              <div class="sidebar__row"><span class="sm-text-info date">02.02.2021</span><span class="sm-text-info time">09:41</span></div>
+            </a>
+
+
+            <a class="sidebar__block" href="#">
+              <h4 class="sidebar__caption">Директор сельского клуба ответит в суде за фиктивное трудоустройство концертмейстера</h4>
+              <div class="sidebar__row"><span class="sm-text-info date">02.02.2021</span><span class="sm-text-info time">09:41</span></div>
+            </a>
+
+
+            <a class="sidebar__block" href="#">
+              <h4 class="sidebar__caption">До 2024 года в Краснодарском крае введут около 18 тысяч гектаров мелиорируемых земель</h4>
+              <div class="sidebar__row"><span class="sm-text-info date">02.02.2021</span><span class="sm-text-info time">09:41</span></div>
+            </a>
+
+
+            <a class="sidebar__block" href="#">
+              <h4 class="sidebar__caption">Врач рассказала, на какие болезни указывает неприятный запах изо рта</h4>
+              <div class="sidebar__row"><span class="sm-text-info date">02.02.2021</span><span class="sm-text-info time">09:41</span></div>
+            </a>
+
+            <div class="wrap-myad">
+              <img src="img/imgad1.jpg" alt="">
+            </div>
+
+            <a class="sidebar__block" href="#">
+              <h4 class="sidebar__caption">Записаться на прививку от COVID-19 можно в любом регионе России</h4>
+              <div class="sidebar__row"><span class="sm-text-info date">02.02.2021</span><span class="sm-text-info time">09:41</span></div>
+            </a>
+
+
+            <a class="sidebar__block" href="#">
+              <h4 class="sidebar__caption">Мошенники обманули мужчину при покупке грузовика на 690 тыс. рублей</h4>
+              <div class="sidebar__row"><span class="sm-text-info date">02.02.2021</span><span class="sm-text-info time">09:41</span></div>
+            </a>
+
+
+            <a class="sidebar__block" href="#">
+              <h4 class="sidebar__caption">Директор сельского клуба ответит в суде за фиктивное трудоустройство концертмейстера</h4>
+              <div class="sidebar__row"><span class="sm-text-info date">02.02.2021</span><span class="sm-text-info time">09:41</span></div>
+            </a>
+
+
+            <a class="sidebar__block" href="#">
+              <h4 class="sidebar__caption">До 2024 года в Краснодарском крае введут около 18 тысяч гектаров мелиорируемых земель</h4>
+              <div class="sidebar__row"><span class="sm-text-info date">02.02.2021</span><span class="sm-text-info time">09:41</span></div>
+            </a>
+
+
+            <a class="sidebar__block" href="#">
+              <h4 class="sidebar__caption">Врач рассказала, на какие болезни указывает неприятный запах изо рта</h4>
+              <div class="sidebar__row"><span class="sm-text-info date">02.02.2021</span><span class="sm-text-info time">09:41</span></div>
+            </a>
+
+          </div>
+          <a class="btn-link" href="#">
+            <span>Все новости</span>
+            <svg>
+
+            </svg>
+          </a>
+        </div>
+      </section>
+    </div>
+    <div class="grid-page__right">
+
+      <div class="content-grid">
+        <div class="content-grid__left">
+          <main>
+            <div class="container">
+              <div class="content-grid__wrapper">
+
+                <div class="xlg-previe-block ">
+                  <a class="xlg-previe-block__wrap-img" href="#">
+                    <picture>
+                      <source srcset="img/xlg-news-img1.jpg" type="image/jpg" />
+                      <img alt="img/xlg-news-img1.webp" />
+                    </picture>
+                  </a>
+                  <div class="xlg-previe-block__wrap-text">
+                    <div class="xlg-previe-block__area">
+                      <a href="#">
+                        <h3>До +17: в Краснодарский край придет аномальное тепло</h3>
+                      </a>
+                    </div>
+                    <div class="xlg-previe-block__row">
+                      <span class="sm-text-info date">22.01.2021</span>
+                      <span class="sm-text-info time">13:18</span>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="md-previe-block ">
+                  <a class="md-previe-block__wrap-img" href="#">
+                    <picture>
+                      <source srcset="img/md-news-img1.jpg" type="image/jpg" />
+                      <img alt="img/md-news-img1.webp" />
+                    </picture>
+                  </a>
+                  <div class="md-previe-block__wrap-text">
+                    <div class="md-previe-block__row">
+
+                      <a href="#" class="sm-category">Спорт</a>
+
+                      <span class="sm-text-info date">27.11.2020</span>
+                      <span class="sm-text-info time">09:41</span>
+                    </div>
+                    <div class="md-previe-block__area">
+                      <a href="#">
+                        <h3>Водитель опрокинувшегося зерновоза был пьян</h3>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="md-previe-block ">
+                  <a class="md-previe-block__wrap-img" href="#">
+                    <picture>
+                      <source srcset="img/md-news-img2.jpg" type="image/jpg" />
+                      <img alt="img/md-news-img2.webp" />
+                    </picture>
+                  </a>
+                  <div class="md-previe-block__wrap-text">
+                    <div class="md-previe-block__row">
+
+                      <a href="#" class="sm-category">Общество</a>
+
+                      <span class="sm-text-info date">27.11.2020</span>
+                      <span class="sm-text-info time">09:41</span>
+                    </div>
+                    <div class="md-previe-block__area">
+                      <a href="#">
+                        <h3>Роспотребнадзор разработал высокоточный экспресс-тест на коронавирус</h3>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="wrapper-block-title">
+                  <h4>Лента новостей</h4>
+                </div>
+                <div class="wrapper-sm-preview">
+                  <div class="wrapper-sm-preview__block">
+
+                    <div class="sm-previe-block change-block">
+                      <div class="sm-previe-block__wrap-text">
+                        <div class="sm-previe-block__row">
+
+                          <a href="#" class="sm-category">Спорт</a>
+
+                          <span class="sm-text-info date">27.11.2020</span>
+                          <span class="sm-text-info time">09:41</span>
+                        </div>
+                        <div class="sm-previe-block__area">
+                          <a href="#">
+                            <h3>В Крымске полицейские задержали подозреваемого в грабеже мужчину</h3>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="sm-previe-block change-block">
+                      <div class="sm-previe-block__wrap-text">
+                        <div class="sm-previe-block__row">
+
+                          <a href="#" class="sm-category">Спорт</a>
+
+                          <span class="sm-text-info date">27.11.2020</span>
+                          <span class="sm-text-info time">09:41</span>
+                        </div>
+                        <div class="sm-previe-block__area">
+                          <a href="#">
+                            <h3>На Кубани снег будет идти еще несколько дней</h3>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="sm-previe-block change-block">
+                      <div class="sm-previe-block__wrap-text">
+                        <div class="sm-previe-block__row">
+
+                          <a href="#" class="sm-category">Спорт</a>
+
+                          <span class="sm-text-info date">27.11.2020</span>
+                          <span class="sm-text-info time">09:41</span>
+                        </div>
+                        <div class="sm-previe-block__area">
+                          <a href="#">
+                            <h3>Кубанские спасатели помогают жителям региона вызволять свои автомобили из снежного плена</h3>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="lg-previe-block change-block">
+                  <div class="lg-previe-block__wrap-img">
+
+                    <a href="#" class="md-category">Общество</a>
+
+                    <a href="#">
+                      <picture>
+                        <source srcset="img/lg-news-img1.jpg" type="image/jpg" />
+                        <img alt="img/lg-news-img1.webp" />
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="lg-previe-block__wrap-text">
+                    <div class="lg-previe-block__row">
+                      <span class="sm-text-info date">27.11.2020</span>
+                      <span class="sm-text-info time">09:41</span>
+                    </div>
+                    <div class="lg-previe-block__area">
+                      <a href="#">
+                        <h3>Кубанские спасатели помогают жителям региона вызволять свои автомобили из снежного плена</h3>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="lg-previe-block change-block">
+                  <div class="lg-previe-block__wrap-img">
+
+                    <a href="#" class="md-category">Здоровье</a>
+
+                    <a href="#">
+                      <picture>
+                        <source srcset="img/lg-news-img2.jpg" type="image/jpg" />
+                        <img alt="img/lg-news-img2.webp" />
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="lg-previe-block__wrap-text">
+                    <div class="lg-previe-block__row">
+                      <span class="sm-text-info date">27.11.2020</span>
+                      <span class="sm-text-info time">09:41</span>
+                    </div>
+                    <div class="lg-previe-block__area">
+                      <a href="#">
+                        <h3>Ученые рассказали, когда может закончится для россиян масочный режим</h3>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="content-grid__sm-grid">
+                <div class="content-grid__block">
+                  <a href="" class="btn-link">
+                    <span>Главное в Приморско-Ахтарске</span>
+                    <svg>
+                      <use xlink:href="img/sprite.svg#svg--sm-arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="content-grid__block">
+                  <a href="" class="btn-link">
+                    <span>Все новости</span>
+                    <svg>
+                      <use xlink:href="img/sprite.svg#svg--sm-arrow"></use>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="topic">
+              <div class="container">
+                <div class="row-title">
+                  <h3 class="title">Темы</h3>
+                  <div class="topic-wrap-arrows">
+                    <div class="topic-arrow topic-arrow--prev">
+                      <svg>
+                        <use xlink:href="img/sprite.svg#svg--arrow-slider"></use>
+                      </svg>
+                    </div>
+                    <div class="topic-arrow topic-arrow--next"><svg>
+                        <use xlink:href="img/sprite.svg#svg--arrow-slider"></use>
+                      </svg></div>
+                  </div>
+                </div>
+                <div class="topic__wrapper">
+                  <div class="topic-slider swiper-container">
+                    <div class="topic-slider__wrapper swiper-wrapper">
+                      <div class="topic-slider__slide swiper-slide"><a class="topic-slider__block" href="#">
+                          <div class="topic-slider__wrap-img">
+                            <picture>
+                              <source srcset="img/topic-mob1.webp" type="image/webp" media="(max-width: 576px)" />
+                              <source srcset="img/topic-mob1.jpg" type="image/jpg" media="(max-width: 576px)" />
+                              <source srcset="img/topic1.webp" type="image/webp" /><img src="img/topic1.jpg" alt="" />
+                            </picture>
+                          </div>
+                          <div class="topic-slider__wrap-text">
+                            <div class="topic-slider__row">
+                              <h3>Коронавирус</h3><sup>+2</sup>
+                            </div>
+                          </div>
+                        </a></div>
+                      <div class="topic-slider__slide swiper-slide"><a class="topic-slider__block" href="#">
+                          <div class="topic-slider__wrap-img">
+                            <picture>
+                              <source srcset="img/topic-mob2.webp" type="image/webp" media="(max-width: 576px)" />
+                              <source srcset="img/topic-mob2.jpg" type="image/jpg" media="(max-width: 576px)" />
+                              <source srcset="img/topic2.webp" type="image/webp" /><img src="img/topic2.jpg" alt="" />
+                            </picture>
+                          </div>
+                          <div class="topic-slider__wrap-text">
+                            <div class="topic-slider__row">
+                              <h3>Курорты Кубани</h3><sup>+17</sup>
+                            </div>
+                          </div>
+                        </a></div>
+                      <div class="topic-slider__slide swiper-slide"><a class="topic-slider__block" href="#">
+                          <div class="topic-slider__wrap-img">
+                            <picture>
+                              <source srcset="img/topic-mob1.webp" type="image/webp" media="(max-width: 576px)" />
+                              <source srcset="img/topic-mob1.jpg" type="image/jpg" media="(max-width: 576px)" />
+                              <source srcset="img/topic3.webp" type="image/webp" /><img src="img/topic3.jpg" alt="" />
+                            </picture>
+                          </div>
+                          <div class="topic-slider__wrap-text">
+                            <div class="topic-slider__row">
+                              <h3>Губернаторские программы</h3><sup>+2</sup>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="topic-slider__slide swiper-slide"><a class="topic-slider__block" href="#">
+                          <div class="topic-slider__wrap-img">
+                            <picture>
+                              <source srcset="img/topic-mob1.webp" type="image/webp" media="(max-width: 576px)" />
+                              <source srcset="img/topic-mob1.jpg" type="image/jpg" media="(max-width: 576px)" />
+                              <source srcset="img/topic3.webp" type="image/webp" /><img src="img/topic3.jpg" alt="" />
+                            </picture>
+                          </div>
+                          <div class="topic-slider__wrap-text">
+                            <div class="topic-slider__row">
+                              <h3>Губернаторские программы</h3><sup>+2</sup>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="topic-slider__slide swiper-slide"><a class="topic-slider__block" href="#">
+                          <div class="topic-slider__wrap-img">
+                            <picture>
+                              <source srcset="img/topic-mob1.webp" type="image/webp" media="(max-width: 576px)" />
+                              <source srcset="img/topic-mob1.jpg" type="image/jpg" media="(max-width: 576px)" />
+                              <source srcset="img/topic3.webp" type="image/webp" /><img src="img/topic3.jpg" alt="" />
+                            </picture>
+                          </div>
+                          <div class="topic-slider__wrap-text">
+                            <div class="topic-slider__row">
+                              <h3>Губернаторские программы</h3><sup>+2</sup>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="topic-slider__slide swiper-slide"><a class="topic-slider__block" href="#">
+                          <div class="topic-slider__wrap-img">
+                            <picture>
+                              <source srcset="img/topic-mob1.webp" type="image/webp" media="(max-width: 576px)" />
+                              <source srcset="img/topic-mob1.jpg" type="image/jpg" media="(max-width: 576px)" />
+                              <source srcset="img/topic3.webp" type="image/webp" /><img src="img/topic3.jpg" alt="" />
+                            </picture>
+                          </div>
+                          <div class="topic-slider__wrap-text">
+                            <div class="topic-slider__row">
+                              <h3>Губернаторские программы</h3><sup>+2</sup>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="wrap-showblockad">
+              <img src="img/blockshadmob1.jpg" alt="">
+            </div>
+
+            <div class="container mob-black">
+              <div class="row-title">
+                <h3 class="title">Происшествия</h3>
+              </div>
+              <div class="content-grid__wrapper content-grid__wrapper--change">
+
+                <div class="xlg-previe-block ">
+                  <a class="xlg-previe-block__wrap-img" href="#">
+                    <picture>
+                      <source srcset="img/xlg-news-img1.jpg" type="image/jpg" />
+                      <img alt="img/xlg-news-img1.webp" />
+                    </picture>
+                  </a>
+                  <div class="xlg-previe-block__wrap-text">
+                    <div class="xlg-previe-block__area">
+                      <a href="#">
+                        <h3>Школьный автобус попал в ДТП на скользком участке дороги</h3>
+                      </a>
+                    </div>
+                    <div class="xlg-previe-block__row">
+                      <span class="sm-text-info date">22.01.2021</span>
+                      <span class="sm-text-info time">13:18</span>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="lg-previe-block change-block">
+                  <div class="lg-previe-block__wrap-img">
+
+
+                    <a href="#">
+                      <picture>
+                        <source srcset="img/lg-news-img1.jpg" type="image/jpg" />
+                        <img alt="img/lg-news-img1.webp" />
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="lg-previe-block__wrap-text">
+                    <div class="lg-previe-block__row">
+                      <span class="sm-text-info date">27.11.2020</span>
+                      <span class="sm-text-info time">09:41</span>
+                    </div>
+                    <div class="lg-previe-block__area">
+                      <a href="#">
+                        <h3>Неизвестные обстреляли автобусы с пассажирами</h3>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="lg-previe-block change-block">
+                  <div class="lg-previe-block__wrap-img">
+
+
+                    <a href="#">
+                      <picture>
+                        <source srcset="img/lg-news-img2.jpg" type="image/jpg" />
+                        <img alt="img/lg-news-img2.webp" />
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="lg-previe-block__wrap-text">
+                    <div class="lg-previe-block__row">
+                      <span class="sm-text-info date">27.11.2020</span>
+                      <span class="sm-text-info time">09:41</span>
+                    </div>
+                    <div class="lg-previe-block__area">
+                      <a href="#">
+                        <h3>Водитель на Range Rover съехал с дороги и перевернулся. Погибли три человека</h3>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="md-grid mob-black">
+              <div class="container">
+                <div class="md-grid__wrapper">
+                  <div class="md-grid__left">
+
+                    <div class="md-previe-block change-block">
+                      <a class="md-previe-block__wrap-img" href="#">
+                        <picture>
+                          <source srcset="img/md-news-img1.jpg" type="image/jpg" />
+                          <img alt="img/md-news-img1.webp" />
+                        </picture>
+                      </a>
+                      <div class="md-previe-block__wrap-text">
+                        <div class="md-previe-block__row">
+
+
+                          <span class="sm-text-info date">27.11.2020</span>
+                          <span class="sm-text-info time">09:41</span>
+                        </div>
+                        <div class="md-previe-block__area">
+                          <a href="#">
+                            <h3>Водитель опрокинувшегося зерновоза был пьян</h3>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="md-previe-block change-block">
+                      <a class="md-previe-block__wrap-img" href="#">
+                        <picture>
+                          <source srcset="img/md-news-img1.jpg" type="image/jpg" />
+                          <img alt="img/md-news-img1.webp" />
+                        </picture>
+                      </a>
+                      <div class="md-previe-block__wrap-text">
+                        <div class="md-previe-block__row">
+
+
+                          <span class="sm-text-info date">27.11.2020</span>
+                          <span class="sm-text-info time">09:41</span>
+                        </div>
+                        <div class="md-previe-block__area">
+                          <a href="#">
+                            <h3>Водитель опрокинувшегося зерновоза был пьян</h3>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="md-previe-block change-block">
+                      <a class="md-previe-block__wrap-img" href="#">
+                        <picture>
+                          <source srcset="img/md-news-img1.jpg" type="image/jpg" />
+                          <img alt="img/md-news-img1.webp" />
+                        </picture>
+                      </a>
+                      <div class="md-previe-block__wrap-text">
+                        <div class="md-previe-block__row">
+
+
+                          <span class="sm-text-info date">27.11.2020</span>
+                          <span class="sm-text-info time">09:41</span>
+                        </div>
+                        <div class="md-previe-block__area">
+                          <a href="#">
+                            <h3>Водитель опрокинувшегося зерновоза был пьян</h3>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="wrapper-sm-preview">
+                      <div class="wrapper-sm-preview__block">
+
+                        <div class="sm-previe-block change-block">
+                          <div class="sm-previe-block__wrap-text">
+                            <div class="sm-previe-block__row">
+
+
+                              <span class="sm-text-info date">27.11.2020</span>
+                              <span class="sm-text-info time">09:41</span>
+                            </div>
+                            <div class="sm-previe-block__area">
+                              <a href="#">
+                                <h3>В Крымске полицейские задержали подозреваемого в грабеже мужчину</h3>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="sm-previe-block change-block">
+                          <div class="sm-previe-block__wrap-text">
+                            <div class="sm-previe-block__row">
+
+
+                              <span class="sm-text-info date">27.11.2020</span>
+                              <span class="sm-text-info time">09:41</span>
+                            </div>
+                            <div class="sm-previe-block__area">
+                              <a href="#">
+                                <h3>На Кубани снег будет идти еще несколько дней</h3>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="sm-previe-block change-block">
+                          <div class="sm-previe-block__wrap-text">
+                            <div class="sm-previe-block__row">
+
+
+                              <span class="sm-text-info date">27.11.2020</span>
+                              <span class="sm-text-info time">09:41</span>
+                            </div>
+                            <div class="sm-previe-block__area">
+                              <a href="#">
+                                <h3>Кубанские спасатели помогают жителям региона вызволять свои автомобили из снежного плена</h3>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="wrapper-sm-preview">
+                      <div class="wrapper-sm-preview__block">
+
+                        <div class="sm-previe-block change-block">
+                          <div class="sm-previe-block__wrap-text">
+                            <div class="sm-previe-block__row">
+
+
+                              <span class="sm-text-info date">27.11.2020</span>
+                              <span class="sm-text-info time">09:41</span>
+                            </div>
+                            <div class="sm-previe-block__area">
+                              <a href="#">
+                                <h3>В Крымске полицейские задержали подозреваемого в грабеже мужчину</h3>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="sm-previe-block change-block">
+                          <div class="sm-previe-block__wrap-text">
+                            <div class="sm-previe-block__row">
+
+
+                              <span class="sm-text-info date">27.11.2020</span>
+                              <span class="sm-text-info time">09:41</span>
+                            </div>
+                            <div class="sm-previe-block__area">
+                              <a href="#">
+                                <h3>На Кубани снег будет идти еще несколько дней</h3>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="sm-previe-block change-block">
+                          <div class="sm-previe-block__wrap-text">
+                            <div class="sm-previe-block__row">
+
+
+                              <span class="sm-text-info date">27.11.2020</span>
+                              <span class="sm-text-info time">09:41</span>
+                            </div>
+                            <div class="sm-previe-block__area">
+                              <a href="#">
+                                <h3>Кубанские спасатели помогают жителям региона вызволять свои автомобили из снежного плена</h3>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="md-previe-block change-block">
+                      <a class="md-previe-block__wrap-img" href="#">
+                        <picture>
+                          <source srcset="img/md-news-img1.jpg" type="image/jpg" />
+                          <img alt="img/md-news-img1.webp" />
+                        </picture>
+                      </a>
+                      <div class="md-previe-block__wrap-text">
+                        <div class="md-previe-block__row">
+
+
+                          <span class="sm-text-info date">27.11.2020</span>
+                          <span class="sm-text-info time">09:41</span>
+                        </div>
+                        <div class="md-previe-block__area">
+                          <a href="#">
+                            <h3>Водитель опрокинувшегося зерновоза был пьян</h3>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="md-grid__right">
+                    <div class="sm-wrap-show">
+                      <div class="sm-wrap-show__block">
+                        <img src="img/sm-imgad1.jpg" alt="">
+                        <img class="none" src="img/sm-imgad1-mob.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container">
+              <hr class="line-offset">
+            </div>
+
+            <div class="wrap-showblockad">
+              <img src="img/blockshadmob2.jpg" alt="">
+            </div>
+
+            <div class="container">
+              <div class="row-title">
+                <h3 class="title">Общество</h3>
+              </div>
+              <div class="content-grid__wrapper content-grid__wrapper--change content-grid__wrapper--no-offset">
+
+                <div class="lg-previe-block main-block">
+                  <div class="lg-previe-block__wrap-img">
+
+
+                    <a href="#">
+                      <picture>
+                        <source srcset="img/lg-news-img1.jpg" type="image/jpg" />
+                        <img alt="img/lg-news-img1.webp" />
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="lg-previe-block__wrap-text">
+                    <div class="lg-previe-block__row">
+                      <span class="sm-text-info date">27.11.2020</span>
+                      <span class="sm-text-info time">09:41</span>
+                    </div>
+                    <div class="lg-previe-block__area">
+                      <a href="#">
+                        <h3>Неизвестные обстреляли автобусы с пассажирами</h3>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="lg-previe-block change-block">
+                  <div class="lg-previe-block__wrap-img">
+
+
+                    <a href="#">
+                      <picture>
+                        <source srcset="img/lg-news-img2.jpg" type="image/jpg" />
+                        <img alt="img/lg-news-img2.webp" />
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="lg-previe-block__wrap-text">
+                    <div class="lg-previe-block__row">
+                      <span class="sm-text-info date">27.11.2020</span>
+                      <span class="sm-text-info time">09:41</span>
+                    </div>
+                    <div class="lg-previe-block__area">
+                      <a href="#">
+                        <h3>Водитель на Range Rover съехал с дороги и перевернулся. Погибли три человека</h3>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="md-grid md-grid--no-offset">
+              <div class="container">
+                <div class="md-grid__wrapper">
+                  <div class="md-grid__left">
+
+                    <div class="md-previe-block change-block">
+                      <a class="md-previe-block__wrap-img" href="#">
+                        <picture>
+                          <source srcset="img/md-news-img1.jpg" type="image/jpg" />
+                          <img alt="img/md-news-img1.webp" />
+                        </picture>
+                      </a>
+                      <div class="md-previe-block__wrap-text">
+                        <div class="md-previe-block__row">
+
+
+                          <span class="sm-text-info date">27.11.2020</span>
+                          <span class="sm-text-info time">09:41</span>
+                        </div>
+                        <div class="md-previe-block__area">
+                          <a href="#">
+                            <h3>Водитель опрокинувшегося зерновоза был пьян</h3>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="md-previe-block change-block">
+                      <a class="md-previe-block__wrap-img" href="#">
+                        <picture>
+                          <source srcset="img/md-news-img1.jpg" type="image/jpg" />
+                          <img alt="img/md-news-img1.webp" />
+                        </picture>
+                      </a>
+                      <div class="md-previe-block__wrap-text">
+                        <div class="md-previe-block__row">
+
+
+                          <span class="sm-text-info date">27.11.2020</span>
+                          <span class="sm-text-info time">09:41</span>
+                        </div>
+                        <div class="md-previe-block__area">
+                          <a href="#">
+                            <h3>Водитель опрокинувшегося зерновоза был пьян</h3>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="md-previe-block change-block">
+                      <a class="md-previe-block__wrap-img" href="#">
+                        <picture>
+                          <source srcset="img/md-news-img1.jpg" type="image/jpg" />
+                          <img alt="img/md-news-img1.webp" />
+                        </picture>
+                      </a>
+                      <div class="md-previe-block__wrap-text">
+                        <div class="md-previe-block__row">
+
+
+                          <span class="sm-text-info date">27.11.2020</span>
+                          <span class="sm-text-info time">09:41</span>
+                        </div>
+                        <div class="md-previe-block__area">
+                          <a href="#">
+                            <h3>Водитель опрокинувшегося зерновоза был пьян</h3>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="wrapper-sm-preview">
+                      <div class="wrapper-sm-preview__block">
+
+                        <div class="sm-previe-block change-block">
+                          <div class="sm-previe-block__wrap-text">
+                            <div class="sm-previe-block__row">
+
+
+                              <span class="sm-text-info date">27.11.2020</span>
+                              <span class="sm-text-info time">09:41</span>
+                            </div>
+                            <div class="sm-previe-block__area">
+                              <a href="#">
+                                <h3>В Крымске полицейские задержали подозреваемого в грабеже мужчину</h3>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="sm-previe-block change-block">
+                          <div class="sm-previe-block__wrap-text">
+                            <div class="sm-previe-block__row">
+
+
+                              <span class="sm-text-info date">27.11.2020</span>
+                              <span class="sm-text-info time">09:41</span>
+                            </div>
+                            <div class="sm-previe-block__area">
+                              <a href="#">
+                                <h3>На Кубани снег будет идти еще несколько дней</h3>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="sm-previe-block change-block">
+                          <div class="sm-previe-block__wrap-text">
+                            <div class="sm-previe-block__row">
+
+
+                              <span class="sm-text-info date">27.11.2020</span>
+                              <span class="sm-text-info time">09:41</span>
+                            </div>
+                            <div class="sm-previe-block__area">
+                              <a href="#">
+                                <h3>Кубанские спасатели помогают жителям региона вызволять свои автомобили из снежного плена</h3>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="wrapper-sm-preview">
+                      <div class="wrapper-sm-preview__block">
+
+                        <div class="sm-previe-block change-block">
+                          <div class="sm-previe-block__wrap-text">
+                            <div class="sm-previe-block__row">
+
+
+                              <span class="sm-text-info date">27.11.2020</span>
+                              <span class="sm-text-info time">09:41</span>
+                            </div>
+                            <div class="sm-previe-block__area">
+                              <a href="#">
+                                <h3>В Крымске полицейские задержали подозреваемого в грабеже мужчину</h3>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="sm-previe-block change-block">
+                          <div class="sm-previe-block__wrap-text">
+                            <div class="sm-previe-block__row">
+
+
+                              <span class="sm-text-info date">27.11.2020</span>
+                              <span class="sm-text-info time">09:41</span>
+                            </div>
+                            <div class="sm-previe-block__area">
+                              <a href="#">
+                                <h3>На Кубани снег будет идти еще несколько дней</h3>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="sm-previe-block change-block">
+                          <div class="sm-previe-block__wrap-text">
+                            <div class="sm-previe-block__row">
+
+
+                              <span class="sm-text-info date">27.11.2020</span>
+                              <span class="sm-text-info time">09:41</span>
+                            </div>
+                            <div class="sm-previe-block__area">
+                              <a href="#">
+                                <h3>Кубанские спасатели помогают жителям региона вызволять свои автомобили из снежного плена</h3>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="md-previe-block change-block">
+                      <a class="md-previe-block__wrap-img" href="#">
+                        <picture>
+                          <source srcset="img/md-news-img1.jpg" type="image/jpg" />
+                          <img alt="img/md-news-img1.webp" />
+                        </picture>
+                      </a>
+                      <div class="md-previe-block__wrap-text">
+                        <div class="md-previe-block__row">
+
+
+                          <span class="sm-text-info date">27.11.2020</span>
+                          <span class="sm-text-info time">09:41</span>
+                        </div>
+                        <div class="md-previe-block__area">
+                          <a href="#">
+                            <h3>Водитель опрокинувшегося зерновоза был пьян</h3>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="md-grid__right">
+                    <div class="sm-wrap-show">
+                      <img class="none" src="img/sm-imgad2-mob.jpg" alt="" class="none">
+                      <div class="sm-wrap-show__block">
+                        <img src="img/sm-imgad2.jpg" alt="">
+                      </div>
+                      <div class="sm-wrap-show__block">
+                        <img src="img/sm-imgad3.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="container">
+              <hr class="line-offset">
+            </div>
+
+            <div class="wrap-showblockad">
+              <img src="img/blockshadmob3.jpg" alt="">
+            </div>
+
+            <div class="container">
+              <div class="row-title">
+                <h3 class="title">Культура</h3>
+              </div>
+              <div class="content-grid__wrapper content-grid__wrapper--change">
+
+                <div class="xlg-previe-block ">
+                  <a class="xlg-previe-block__wrap-img" href="#">
+                    <picture>
+                      <source srcset="img/xlg-news-img1.jpg" type="image/jpg" />
+                      <img alt="img/xlg-news-img1.webp" />
+                    </picture>
+                  </a>
+                  <div class="xlg-previe-block__wrap-text">
+                    <div class="xlg-previe-block__area">
+                      <a href="#">
+                        <h3>Школьный автобус попал в ДТП на скользком участке дороги</h3>
+                      </a>
+                    </div>
+                    <div class="xlg-previe-block__row">
+                      <span class="sm-text-info date">22.01.2021</span>
+                      <span class="sm-text-info time">13:18</span>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="lg-previe-block change-block">
+                  <div class="lg-previe-block__wrap-img">
+
+
+                    <a href="#">
+                      <picture>
+                        <source srcset="img/lg-news-img1.jpg" type="image/jpg" />
+                        <img alt="img/lg-news-img1.webp" />
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="lg-previe-block__wrap-text">
+                    <div class="lg-previe-block__row">
+                      <span class="sm-text-info date">27.11.2020</span>
+                      <span class="sm-text-info time">09:41</span>
+                    </div>
+                    <div class="lg-previe-block__area">
+                      <a href="#">
+                        <h3>Неизвестные обстреляли автобусы с пассажирами</h3>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="lg-previe-block change-block">
+                  <div class="lg-previe-block__wrap-img">
+
+
+                    <a href="#">
+                      <picture>
+                        <source srcset="img/lg-news-img2.jpg" type="image/jpg" />
+                        <img alt="img/lg-news-img2.webp" />
+                      </picture>
+                    </a>
+                  </div>
+                  <div class="lg-previe-block__wrap-text">
+                    <div class="lg-previe-block__row">
+                      <span class="sm-text-info date">27.11.2020</span>
+                      <span class="sm-text-info time">09:41</span>
+                    </div>
+                    <div class="lg-previe-block__area">
+                      <a href="#">
+                        <h3>Водитель на Range Rover съехал с дороги и перевернулся. Погибли три человека</h3>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="md-grid md-grid--no-offset">
+              <div class="container">
+                <div class="md-grid__wrapper">
+                  <div class="md-grid__left">
+
+                    <div class="md-previe-block change-block">
+                      <a class="md-previe-block__wrap-img" href="#">
+                        <picture>
+                          <source srcset="img/md-news-img1.jpg" type="image/jpg" />
+                          <img alt="img/md-news-img1.webp" />
+                        </picture>
+                      </a>
+                      <div class="md-previe-block__wrap-text">
+                        <div class="md-previe-block__row">
+
+
+                          <span class="sm-text-info date">27.11.2020</span>
+                          <span class="sm-text-info time">09:41</span>
+                        </div>
+                        <div class="md-previe-block__area">
+                          <a href="#">
+                            <h3>Водитель опрокинувшегося зерновоза был пьян</h3>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="md-previe-block change-block">
+                      <a class="md-previe-block__wrap-img" href="#">
+                        <picture>
+                          <source srcset="img/md-news-img1.jpg" type="image/jpg" />
+                          <img alt="img/md-news-img1.webp" />
+                        </picture>
+                      </a>
+                      <div class="md-previe-block__wrap-text">
+                        <div class="md-previe-block__row">
+
+
+                          <span class="sm-text-info date">27.11.2020</span>
+                          <span class="sm-text-info time">09:41</span>
+                        </div>
+                        <div class="md-previe-block__area">
+                          <a href="#">
+                            <h3>Водитель опрокинувшегося зерновоза был пьян</h3>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="md-previe-block change-block">
+                      <a class="md-previe-block__wrap-img" href="#">
+                        <picture>
+                          <source srcset="img/md-news-img1.jpg" type="image/jpg" />
+                          <img alt="img/md-news-img1.webp" />
+                        </picture>
+                      </a>
+                      <div class="md-previe-block__wrap-text">
+                        <div class="md-previe-block__row">
+
+
+                          <span class="sm-text-info date">27.11.2020</span>
+                          <span class="sm-text-info time">09:41</span>
+                        </div>
+                        <div class="md-previe-block__area">
+                          <a href="#">
+                            <h3>Водитель опрокинувшегося зерновоза был пьян</h3>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="wrapper-sm-preview">
+                      <div class="wrapper-sm-preview__block">
+
+                        <div class="sm-previe-block change-block">
+                          <div class="sm-previe-block__wrap-text">
+                            <div class="sm-previe-block__row">
+
+
+                              <span class="sm-text-info date">27.11.2020</span>
+                              <span class="sm-text-info time">09:41</span>
+                            </div>
+                            <div class="sm-previe-block__area">
+                              <a href="#">
+                                <h3>В Крымске полицейские задержали подозреваемого в грабеже мужчину</h3>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="sm-previe-block change-block">
+                          <div class="sm-previe-block__wrap-text">
+                            <div class="sm-previe-block__row">
+
+
+                              <span class="sm-text-info date">27.11.2020</span>
+                              <span class="sm-text-info time">09:41</span>
+                            </div>
+                            <div class="sm-previe-block__area">
+                              <a href="#">
+                                <h3>На Кубани снег будет идти еще несколько дней</h3>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="sm-previe-block change-block">
+                          <div class="sm-previe-block__wrap-text">
+                            <div class="sm-previe-block__row">
+
+
+                              <span class="sm-text-info date">27.11.2020</span>
+                              <span class="sm-text-info time">09:41</span>
+                            </div>
+                            <div class="sm-previe-block__area">
+                              <a href="#">
+                                <h3>Кубанские спасатели помогают жителям региона вызволять свои автомобили из снежного плена</h3>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="wrapper-sm-preview">
+                      <div class="wrapper-sm-preview__block">
+
+                        <div class="sm-previe-block change-block">
+                          <div class="sm-previe-block__wrap-text">
+                            <div class="sm-previe-block__row">
+
+
+                              <span class="sm-text-info date">27.11.2020</span>
+                              <span class="sm-text-info time">09:41</span>
+                            </div>
+                            <div class="sm-previe-block__area">
+                              <a href="#">
+                                <h3>В Крымске полицейские задержали подозреваемого в грабеже мужчину</h3>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="sm-previe-block change-block">
+                          <div class="sm-previe-block__wrap-text">
+                            <div class="sm-previe-block__row">
+
+
+                              <span class="sm-text-info date">27.11.2020</span>
+                              <span class="sm-text-info time">09:41</span>
+                            </div>
+                            <div class="sm-previe-block__area">
+                              <a href="#">
+                                <h3>На Кубани снег будет идти еще несколько дней</h3>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="sm-previe-block change-block">
+                          <div class="sm-previe-block__wrap-text">
+                            <div class="sm-previe-block__row">
+
+
+                              <span class="sm-text-info date">27.11.2020</span>
+                              <span class="sm-text-info time">09:41</span>
+                            </div>
+                            <div class="sm-previe-block__area">
+                              <a href="#">
+                                <h3>Кубанские спасатели помогают жителям региона вызволять свои автомобили из снежного плена</h3>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="md-previe-block change-block">
+                      <a class="md-previe-block__wrap-img" href="#">
+                        <picture>
+                          <source srcset="img/md-news-img1.jpg" type="image/jpg" />
+                          <img alt="img/md-news-img1.webp" />
+                        </picture>
+                      </a>
+                      <div class="md-previe-block__wrap-text">
+                        <div class="md-previe-block__row">
+
+
+                          <span class="sm-text-info date">27.11.2020</span>
+                          <span class="sm-text-info time">09:41</span>
+                        </div>
+                        <div class="md-previe-block__area">
+                          <a href="#">
+                            <h3>Водитель опрокинувшегося зерновоза был пьян</h3>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="md-grid__right">
+                    <div class="sm-wrap-show">
+                      <div class="sm-wrap-show__block">
+                        <img src="img/sm-imgad1.jpg" alt="">
+                        <img class="none" src="img/sm-imgad1-mob.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="wrap-showblockad">
+              <img src="img/blockshadmob4.jpg" alt="">
+            </div>
+          </main>
+          <footer>
+            <section class="link-bloks-wrapper">
+              <div class="container">
+                <div class="link-bloks-wrapper__grid"><a class="link-blok" href="#">
+                    <div class="link-blok__wrap-img"><img src="img/logo-org1.png" alt="" /></div>
+                    <div class="link-blok__wrap-text">
+                      <h4>Администрация</h4>
+                      <p>Официальный сайт Администрации Краснодарского края</p>
+                    </div>
+                  </a><a class="link-blok" href="#">
+                    <div class="link-blok__wrap-img"><img src="img/logo-org2.png" alt="" /></div>
+                    <div class="link-blok__wrap-text">
+                      <h4>Кубанский репортер</h4>
+                      <p>Сайт Краснодарского краевого отделения Союза журналистов России</p>
+                    </div>
+                  </a></div>
+              </div>
+            </section>
+            <section class="page-footer">
+              <div class="container">
+                <div class="page-footer__grid">
+                  <ul class="page-footer__list">
+                    <li class="page-footer__item"><a class="page-footer__link" href="#"><span>Все новости</span></a></li>
+                    <li class="page-footer__item"><a class="page-footer__link" href="#"><span>Общество</span></a></li>
+                    <li class="page-footer__item"><a class="page-footer__link" href="#"><span>Власть</span></a></li>
+                    <li class="page-footer__item"><a class="page-footer__link" href="#"><span>Экономика</span></a></li>
+                    <li class="page-footer__item"><a class="page-footer__link" href="#"><span>Происшествия</span></a></li>
+                    <li class="page-footer__item"><a class="page-footer__link" href="#"><span>Спорт</span></a></li>
+                  </ul>
+                  <ul class="page-footer__list">
+                    <li class="page-footer__item"><a class="page-footer__link" href="#"><span>Культура</span></a></li>
+                    <li class="page-footer__item"><a class="page-footer__link" href="#"><span>Фото</span></a></li>
+                    <li class="page-footer__item"><a class="page-footer__link" href="#"><span>Видео</span></a></li>
+                    <li class="page-footer__item"><a class="page-footer__link" href="#"><span>Туризм</span></a></li>
+                    <li class="page-footer__item"><a class="page-footer__link" href="#"><span>Сельское хозяйство</span></a></li>
+                    <li class="page-footer__item"><a class="page-footer__link" href="#"><span>Интересы</span></a></li>
+                  </ul>
+                  <ul class="page-footer__list">
+                    <li class="page-footer__item"><a class="page-footer__link" href="#"><span>Спецпроекты</span></a></li>
+                    <li class="page-footer__item"><a class="page-footer__link" href="#"><span>Кубань 2000 — 2018</span></a></li>
+                    <li class="page-footer__item"><a class="page-footer__link" href="#"><span>Кубань. Формат успеха</span></a></li>
+                    <li class="page-footer__item"><a class="page-footer__link" href="#"><img src="img/sm-icon.png" alt="" /><span>75-летие Победы!</span></a></li>
+                    <li class="page-footer__item"><a class="page-footer__link" href="#"><span>Я помню День Победы</span></a></li>
+                  </ul>
+                </div>
+                <div class="page-footer__row-grid">
+                  <div class="page-footer__wrap"><a class="tel" href="tel:+78612596027">+7 (861) 259-60-27</a><span class="adrees">350000, г. Краснодар, ул. Пашковская, 2</span></div>
+                  <ul class="social-list">
+                    <li class="social-list__item"><a class="social-list__link" href="#"><svg>
+                          <use xlink:href="img/sprite.svg#svg--vk"></use>
+                        </svg></a></li>
+                    <li class="social-list__item"><a class="social-list__link" href="#"><svg>
+                          <use xlink:href="img/sprite.svg#svg--fa"></use>
+                        </svg></a></li>
+                    <li class="social-list__item"><a class="social-list__link" href="#"><svg>
+                          <use xlink:href="img/sprite.svg#svg--tw"></use>
+                        </svg></a></li>
+                    <li class="social-list__item"><a class="social-list__link" href="#"><svg>
+                          <use xlink:href="img/sprite.svg#svg--od"></use>
+                        </svg></a></li>
+                    <li class="social-list__item"><a class="social-list__link" href="#"><svg>
+                          <use xlink:href="img/sprite.svg#svg--in"></use>
+                        </svg></a></li>
+                    <li class="social-list__item"><a class="social-list__link" href="#"><svg>
+                          <use xlink:href="img/sprite.svg#svg--te"></use>
+                        </svg></a></li>
+                  </ul>
+                </div>
+                <div class="page-footer__wrap-text">
+                  <div class="page-footer__row"><a class="page-footer__link" href="#"><span>Редакция</span></a><a class="page-footer__link" href="#"><span>Рекламодателям</span></a><a class="page-footer__link" href="#"><span>Правила использования материалов сайта</span></a></div>
+                  <p class="page-footer__text">Интернет-портал "Кубанские Новости" (18+) зарегистрирован Федеральной службой по надзору в сфере связи, информационных технологий и массовых коммуникаций (Роскомнадзор) 31 декабря 2015 г. Номер свидетельства Эл №ФС77-64381. Учредитель - ООО "ГИК "Кубанские Новости" (350000, Краснодар, ул. Пашковская, 2). Главный редактор – Хомутов Е.В.</p>
+                </div>
+                <div class="page-footer__down">
+                  <div class="page-footer__left"><svg>
+                      <use xlink:href="img/sprite.svg#svg--age"></use>
+                    </svg><span class="page-footer__text">Кубанские Новости, 2015-2020. Для пользователей старше 18 лет</span></div>
+                  <div class="page-footer__right">
+                    <div class="copyright"><a class="copyright__link" href="#">Создание сайта</a><span class="copyright__text">— Very Good</span></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </footer>
+        </div>
+        <div class="content-grid__right">
+          <div class="lg-wrap-show">
+            <img src="img/lgshow1.jpg" alt="">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script>
+    const swiper = new Swiper('.topic-slider', {
+      //- slidesPerView: 3,
+      loop: true,
+      spaceBetween: 0,
+      navigation: {
+        nextEl: '.topic-arrow--next',
+        prevEl: '.topic-arrow--prev',
+      },
+      breakpoints: {
+        1600: {
+          slidesPerView: 3,
+        },
+        767: {
+          slidesPerView: 2,
+        },
+        0: {
+          slidesPerView: 'auto',
+        }
+      }
+    });
+  </script>
+
+</body>
+
+</html>
