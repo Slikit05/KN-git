@@ -25,6 +25,7 @@
 
   &__right {
     flex-grow: 1;
+    min-width: 0;
   }
 }
 
@@ -54,6 +55,7 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #FFFFFF;
+
   &--no-absolute {
     position: static;
     display: inline-block;
@@ -71,7 +73,7 @@
 
 .content-grid {
   height: 100%;
-  min-width: 0;
+  min-width: 1px;
   display: grid;
   grid-template-columns: 1fr 450px;
 
@@ -81,7 +83,7 @@
 
   &__left {
     background-color: #fff;
-    // flex-grow: 1;
+    flex-grow: 1;
     min-width: 0;
     height: 100%;
 
@@ -252,13 +254,16 @@
   @media (max-width: 575px) {
     display: none;
   }
+
   &--mob-show {
     @media (max-width: 575px) {
       display: flex;
+
       .title {
         padding-top: 0;
         font-size: 26px;
         line-height: normal;
+
         &::before {
           display: none;
         }

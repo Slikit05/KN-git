@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title></title>
 
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
 
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -129,24 +129,6 @@
               <li class="menu-nav__item">
                 <div class="menu-nav__row"><a class="menu-nav__link" href="#">Интересы</a></div>
               </li>
-              <li class="menu-nav__item">
-                <div class="menu-nav__row accordion-up">
-                  <span class="menu-nav__link">Спецпроекты</span>
-                  <svg>
-                    <use xlink:href="img/sprite.svg#svg--arrow-slider"></use>
-                  </svg>
-                </div>
-                <div class="accordion-drop-down">
-                  <div class="accordion-drop-down__area">
-                    <ul>
-                      <li><a href="#"><span>Кубань 2000 — 2018</span></a></li>
-                      <li><a href="#"><span>Кубань. Формат успеха</span></a></li>
-                      <li><a href="#"><span>75-летие Победы!</span></a></li>
-                      <li><a href="#"><span>Я помню День Победы</span></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
             </ul>
           </nav>
         </div>
@@ -230,7 +212,6 @@
         </div>
       </div>
     </section>
-
 
   </header>
 
@@ -456,7 +437,7 @@
 								<div class="gallery-slider">
 									<div class='swipe-icon'><img src="img/swipe-icon.svg" alt=""></div>
 									<div class="gallery-slider__block">
-										<div class="gallery-slider__container swiper-container">
+										<div class="gallery-slider__container swiper">
 											<div class="gallery-slider__wrapper swiper-wrapper">
 												<div class="gallery-slider__slide swiper-slide">
 													<picture>
@@ -625,15 +606,17 @@
   </div>
   <script src="js/main.js"></script>
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="js/swiper-bundle.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js"></script>
   <script src="https://unpkg.com/vue-observe-visibility/dist/vue-observe-visibility.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
   <script>
     function processAjaxData(titleName, urlPath) {
-      window.history.pushState({
-        "pageTitle": titleName
-      }, titleName, urlPath);
+      window
+        .history
+        .pushState({
+          "pageTitle": titleName
+        }, titleName, urlPath);
       document.title = titleName;
     };
     new Vue({
@@ -644,16 +627,24 @@
         idPage: '',
         swiper: null,
         show: true,
-        isVisible: true,
+        isVisible: true
       }),
       methods: {
         appendUser() {
           axios
             .get('js/arrPage.json')
             .then(response => {
-              this.pages.push(response.data.page[0]);
-              this.pageHtml = response.data.page[0].content;
-              this.idPage = response.data.page[0].idpage;
+              this
+                .pages
+                .push(response.data.page[0]);
+              this.pageHtml = response
+                .data
+                .page[0]
+                .content;
+              this.idPage = response
+                .data
+                .page[0]
+                .idpage;
             });
         },
         getInitialUsers() {
@@ -675,14 +666,20 @@
           console.log(this.isVisible)
           if (isVisible) {
             console.log("Берем адрес");
-            entry.target.classList.add("animate-page");
+            entry
+              .target
+              .classList
+              .add("animate-page");
             const urlPage = entry.target.dataset.url;
-            const titlePage = entry.target.querySelector(".title-main-page").textContent;
+            const titlePage = entry
+              .target
+              .querySelector(".title-main-page")
+              .textContent;
             console.log(urlPage);
             console.log(titlePage);
             processAjaxData(titlePage, urlPage);
           }
-        },
+        }
       },
       beforeMount() {
         this.getInitialUsers();
@@ -698,15 +695,15 @@
             observer: true,
             pagination: {
               el: `[data-id='${this.idPage}'] .gallery-slider__fraction`,
-              type: "fraction",
+              type: "fraction"
             },
             navigation: {
               nextEl: `[data-id='${this.idPage}'] .gallery-slider__arrow--next`,
-              prevEl: `[data-id='${this.idPage}'] .gallery-slider__arrow--prev`,
-            },
+              prevEl: `[data-id='${this.idPage}'] .gallery-slider__arrow--prev`
+            }
           });
         })
-      },
+      }
     });
   </script>
 

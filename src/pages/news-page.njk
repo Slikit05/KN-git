@@ -1,11 +1,10 @@
 {% extends "__layout.njk" %}
 
 {% block Link %}
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/swiper-bundle.min.css" />
 {% endblock %}
 
-{% block Header %}
-{% endblock %}
+{% block Header %}{% endblock %}
 
 {% block Content %}
 	<div class="content-grid">
@@ -13,10 +12,10 @@
 			<main>
 				<div class="infinite-scroll-page" id="scrollPage">
 					{% raw %}
-					<div class="infinite-scroll-page__wrapper" v-for="page in pages" v-bind:data-url="page.url" v-bind:data-id="page.idpage" v-show="show" v-observe-visibility="visibilityChanged">
-						<div v-html="pageHtml"></div>
-					</div>
-					<!--<div class="post-inner">
+						<div class="infinite-scroll-page__wrapper" v-for="page in pages" v-bind:data-url="page.url" v-bind:data-id="page.idpage" v-show="show" v-observe-visibility="visibilityChanged">
+							<div v-html="pageHtml"></div>
+						</div>
+						<!--<div class="post-inner">
 						<div class="center-container">
 							<div class="post-title-row">
 								<a href="#" class="md-category md-category--no-absolute">Общество</a>
@@ -71,7 +70,7 @@
 								<div class="gallery-slider">
 									<div class='swipe-icon'><img src="img/swipe-icon.svg" alt=""></div>
 									<div class="gallery-slider__block">
-										<div class="gallery-slider__container swiper-container">
+										<div class="gallery-slider__container swiper">
 											<div class="gallery-slider__wrapper swiper-wrapper">
 												<div class="gallery-slider__slide swiper-slide">
 													<picture>
@@ -226,7 +225,7 @@
 					</div>-->
 					{% endraw %}
 				</div>
-				
+
 			</main>
 		</div>
 		<div class="content-grid__right">
@@ -238,14 +237,18 @@
 {% endblock %}
 
 {% block Scripts %}
-<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js"></script>
+	<script src="js/swiper-bundle.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js"></script>
 	<script src="https://unpkg.com/vue-observe-visibility/dist/vue-observe-visibility.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
 	<script>
 
-		function processAjaxData(titleName, urlPath){
-			window.history.pushState({"pageTitle":titleName}, titleName, urlPath);
+		function processAjaxData(titleName, urlPath) {
+			window
+				.history
+				.pushState({
+					"pageTitle": titleName
+				}, titleName, urlPath);
 			document.title = titleName;
 		};
 		new Vue({
@@ -256,52 +259,66 @@
 				idPage: '',
 				swiper: null,
 				show: true,
-    		isVisible: true,
+				isVisible: true
 			}),
-			methods: {				
-				appendUser () {
+			methods: {
+				appendUser() {
 					axios
 						.get('js/arrPage.json')
 						.then(response => {
-							this.pages.push(response.data.page[0]);
-							this.pageHtml = response.data.page[0].content;
-							this.idPage = response.data.page[0].idpage;
+							this
+								.pages
+								.push(response.data.page[0]);
+							this.pageHtml = response
+								.data
+								.page[0]
+								.content;
+							this.idPage = response
+								.data
+								.page[0]
+								.idpage;
 						});
 				},
-				getInitialUsers () {
+				getInitialUsers() {
 					this.appendUser();
 				},
-				scroll (page) {
+				scroll(page) {
 					window.onscroll = () => {
 						let bottomOfWindow = document.documentElement.scrollTop + window.innerHeight === document.documentElement.offsetHeight;
 						if (bottomOfWindow) {
-							for(var i = 0; i < 1; i++){
+							for (var i = 0; i < 1; i++) {
 								this.appendUser()
 							}
 						}
 					};
 				},
-				visibilityChanged (isVisible, entry) {
+				visibilityChanged(isVisible, entry) {
 					this.isVisible = isVisible
-					
+
 					console.log(this.isVisible)
 					if (isVisible) {
 						console.log("Берем адрес");
-						entry.target.classList.add("animate-page");
+						entry
+							.target
+							.classList
+							.add("animate-page");
 						const urlPage = entry.target.dataset.url;
-						const titlePage = entry.target.querySelector(".title-main-page").textContent;
+						const titlePage = entry
+							.target
+							.querySelector(".title-main-page")
+							.textContent;
 						console.log(urlPage);
 						console.log(titlePage);
 						processAjaxData(titlePage, urlPage);
 					}
-				},
+				}
 			},
 			beforeMount() {
 				this.getInitialUsers();
 			},
 			mounted() {
 				this.scroll(this.pages);
-				
+
 			},
 			updated: function () {
 				this.$nextTick(function () {
@@ -310,18 +327,16 @@
 						observer: true,
 						pagination: {
 							el: `[data-id='${this.idPage}'] .gallery-slider__fraction`,
-							type: "fraction",
+							type: "fraction"
 						},
 						navigation: {
 							nextEl: `[data-id='${this.idPage}'] .gallery-slider__arrow--next`,
-							prevEl: `[data-id='${this.idPage}'] .gallery-slider__arrow--prev`,
-						},
+							prevEl: `[data-id='${this.idPage}'] .gallery-slider__arrow--prev`
+						}
 					});
 				})
-			},			
+			}
 		});
-
-
 	</script>
 	{# <script>
 		const swiper = new Swiper('.gallery-slider__container', {
@@ -338,5 +353,5 @@
 			},
 		});
 	</script> #}
-	
+
 {% endblock %}
